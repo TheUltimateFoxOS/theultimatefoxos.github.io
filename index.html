@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+    <title>FoxOS - Home</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="bar orange card left-align large">
+        <a class="bar-item button hide-medium hide-large right padding-large hover-white large orange" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        <a href="/" class="bar-item button padding-large white">Home</a>
+        <a href="/about/" class="bar-item button hide-small padding-large hover-white">About Us</a>
+      </div>
+    </div>
+    <header class="container orange center" style="padding:50px 16px">
+      <h1 class="margin jumbo">FoxOS</h1>
+      <p class="xlarge">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="row-padding padding-64 container">
+      <div class="content">
+        <div class="twothird">
+          <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheUltimateFoxOS%2FFoxOS&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" />
+          <a href="https://github.com/TheUltimateFoxOS/FoxOS/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
+          <a href="https://discord.gg/qfYBHFWDcK"><img src="https://img.shields.io/discord/810910573864550410.svg?color=%237289da&label=discord" /></a>
+          <a href="https://github.com/TheUltimateFoxOS/FoxOS/releases"><img src="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml/badge.svg" /></a>
+          <p>
+            Our goal is to develop an operation system that focuses on the terminal, performence and reliability. We hope to provide you with a functionnal, performant and stable OS. And we do that together, everyone can help!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row-padding light-grey padding-64 container">
+      <div class="content">
+        <div class="third center">
+          <i class="fa fa-coffee padding-64 text-red margin-right"></i>
+        </div>
+        <div class="twothird">
+          <h2>Building:</h2>
+          <p>
+            To build this os, you will need a 64bit Ubuntu or Debian based os that you can install the following pachages on:
+            <pre>sudo apt-get install mtools build-essential nasm</pre>
+            Then simply run one of the following:<br />
+            To build the files:
+            <pre>make</pre>
+            To build a .img (this also runs the default make):
+            <pre>make img</pre>
+            To build a bootable USB. The USB must be formatted with FAT32 (this also runs the default make):
+            <pre>make usb</pre>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row-padding padding-64 container">
+      <div class="content">
+        <div class="twothird">
+          <h1>Contributing:</h1>
+          <p>
+            Feel free to fix a bug, implement a feature or any other change you thing would be good. If you want to contact us, join our Discord, we are there to help with any question.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row-padding light-grey padding-64 container">
+      <div class="content">
+        <div class="third center">
+          <i class="fa fa-coffee padding-64 text-red margin-right"></i>
+        </div>
+        <div class="twothird">
+          <h2>Running:</h2>
+          <p>
+            To run this OS, you can either use a VM or a bootable USB. See the building section for more info on how to build them.<br />
+            To build and run in QEMU with the correct configuration, simply run:
+            <pre>make run</pre>
+            To run this OS in VirtalBox, you will need to create an optical drive (.iso, .viso, ...). Then you need to enable EFI under "System" in your VM's config. Then run it!<br />
+            If you want to add documentation to booting on different software, feel free to do so.<br />
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row-padding padding-64 container">
+      <div class="content">
+        <div class="twothird">
+          <h1>Our Discord:</h1>
+          <p>
+            Here is the link to our Discord: <a href="https://discord.gg/qfYBHFWDcK">https://discord.gg/qfYBHFWDcK</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
