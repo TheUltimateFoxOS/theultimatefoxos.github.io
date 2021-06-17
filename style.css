@@ -1400,3 +1400,10 @@ pre {
   display: block;
   word-wrap: break-word;
 }
+
+code {
+  background-color: #d9d9d9;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-family: monospace;
+}
