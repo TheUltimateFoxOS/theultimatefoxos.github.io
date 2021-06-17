@@ -18,17 +18,16 @@
       <h1 class="margin jumbo">FoxOS</h1>
       <p class="xlarge">Welcome to the FoxOS website!</p>
     </header>
-    
     <div class="row-padding padding-64 container">
       <div class="content">
         <div class="twothird">
-          <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheUltimateFoxOS%2FFoxOS&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" />
-          <a href="https://github.com/TheUltimateFoxOS/FoxOS/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" /></a>
-          <a href="https://discord.gg/qfYBHFWDcK"><img src="https://img.shields.io/discord/810910573864550410.svg?color=%237289da&label=discord" /></a>
-          <a href="https://github.com/TheUltimateFoxOS/FoxOS/releases"><img src="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml/badge.svg" /></a>
+          <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheUltimateFoxOS%2FFoxOS&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false" alt="Hits"></a>
+          <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+          <a href="https://discord.gg/qfYBHFWDcK"><img src="https://img.shields.io/discord/810910573864550410.svg?color=%237289da&amp;label=discord" alt="Discord"></a>
+          <a href="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml"><img src="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml/badge.svg" alt="Automatic Release"></a>
           <p>
             Our goal is to develop an operation system that focuses on the terminal, performence and reliability. We hope to provide you with a functionnal, performant and stable OS. And we do that together, everyone can help!<br />
-			Here is the link to our <a href="https://github.com/TheUltimateFoxOS/FoxOS">github repository</a> if you want to help!
+            Here is the link to our <a href="https://github.com/TheUltimateFoxOS/FoxOS">github repository</a> if you want to!
           </p>
         </div>
       </div>
@@ -39,28 +38,31 @@
           <i class="fa fa-coffee padding-64 text-red margin-right"></i>
         </div>
         <div class="twothird">
-          <h2>Building:</h2>
+          <h2>Building</h2>
           <p>
-            To build this os, you will need a 64bit Ubuntu or Debian based os that you can install the following pachages on:
-            <pre>sudo apt-get install mtools build-essential nasm</pre>
-            Then simply run one of the following:<br />
-            To build the files:
-            <pre>make</pre>
-            To build a .img (this also runs the default make):
-            <pre>make img</pre>
-            To build a bootable USB. The USB must be formatted with FAT32 (this also runs the default make):
-            <pre>make usb</pre>
+            Before you build the project, you need to clone the submodules. To do so, run:
+          <pre>git submodule update --init --recursive</pre>
+          To build this OS, you will need a 64bit Ubuntu or Debian based os that you can install the following pachages on: <code>mtools</code>, <code>build-essential</code> and <code>nasm</code>. Install them like this:
+          <pre>sudo apt install mtools build-essential nasm</pre>
+          Then simply run one of the following:<br>
           </p>
+          <ul>
+            <li><code>make</code>: build the project.</li>
+            <li><code>make img</code>: package the <code>.img</code> file.</li>
+            <li><code>make usb</code>: build a bootable USB. <strong>The USB must be formatted with FAT32!</strong> You will also need <code>zip</code> installed on your building machine. To install, simply run <code>sudo apt install zip</code>.</li>
+          </ul>
         </div>
       </div>
     </div>
     <div class="row-padding padding-64 container">
       <div class="content">
         <div class="twothird">
-          <h1>Contributing:</h1>
-          <p>
-            Feel free to fix a bug, implement a feature or any other change you thing would be good. If you want to contact us, join our Discord, we are there to help with any question.
-          </p>
+          <h1>Other make commands</h1>
+          <ul>
+            <li><code>make clean</code>: clear all the built files.</li>
+            <li><code>make debug</code>: build and debug using <a href="https://deno.land/">deno</a>.</li>
+            <li><code>make run-dbg</code>: start a screen for QEMU so you can debug using gdb.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -70,13 +72,9 @@
           <i class="fa fa-coffee padding-64 text-red margin-right"></i>
         </div>
         <div class="twothird">
-          <h2>Running:</h2>
+          <h2>Contributing</h2>
           <p>
-            To run this OS, you can either use a VM or a bootable USB. See the building section for more info on how to build them.<br />
-            To build and run in QEMU with the correct configuration, simply run:
-            <pre>make run</pre>
-            To run this OS in VirtalBox, you will need to create an optical drive (.iso, .viso, ...). Then you need to enable EFI under "System" in your VM's config. Then run it!<br />
-            If you want to add documentation to booting on different software, feel free to do so.<br />
+            Feel free to fix a bug, implement a feature or any other change you thing would be good. If you want to contact us, join our <a href="https://discord.gg/qfYBHFWDcK">Discord</a>, we are there to help with any question you may have. Or you can <a href="https://github.com/TheUltimateFoxOS/FoxOS/issues/new/choose">create an issue</a>.
           </p>
         </div>
       </div>
@@ -84,9 +82,28 @@
     <div class="row-padding padding-64 container">
       <div class="content">
         <div class="twothird">
-          <h1>Our Discord:</h1>
+          <h1>Running</h1>
           <p>
-            Here is the link to our Discord: <a href="https://discord.gg/qfYBHFWDcK">https://discord.gg/qfYBHFWDcK</a>
+            To run this OS, you can either use a VM or a bootable USB. See the building section for more info on how to build them.<br>
+            How to start:<br>
+          </p>
+          <ul>
+            <li><strong>QEMU</strong>: Use make <code>make run</code> to build and launch QEMU with the correct configuration.</li>
+            <li><strong>VirtalBox</strong>: You will need to create an optical drive (<code>.iso</code>, <code>.viso</code>, ...) from the <code>.img</code> file. Then you need to enable EFI under &quot;System&quot; in your VM&#39;s config. Then run it!</li>
+          </ul>
+          <p>If you want to add documentation to booting on different software, feel free to do so.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row-padding light-grey padding-64 container">
+      <div class="content">
+        <div class="third center">
+          <i class="fa fa-coffee padding-64 text-red margin-right"></i>
+        </div>
+        <div class="twothird">
+          <h2>Our Discord</h2>
+          <p>
+            Here is the link to our <a href="https://discord.gg/qfYBHFWDcK">Discord</a>.
           </p>
         </div>
       </div>
