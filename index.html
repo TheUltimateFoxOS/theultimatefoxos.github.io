@@ -41,10 +41,15 @@
           <h2>Building</h2>
           <p>
             Before you build the project, you need to clone the submodules. To do so, run:
-          <pre>git submodule update --init --recursive</pre>
-          To build this OS, you will need a 64bit Ubuntu or Debian based os that you can install the following pachages on: <code>mtools</code>, <code>build-essential</code> and <code>nasm</code>. Install them like this:
-          <pre>sudo apt install mtools build-essential nasm</pre>
-          Then simply run one of the following:<br>
+            <pre>git submodule update --init --recursive</pre>
+            To build this OS, you have two options, you need one of these:
+            <ul>
+              <li>A 64bit Ubuntu or Debian based OS that you can install the following pachages on: <code>mtools</code>, <code>build-essential</code> and <code>nasm</code>. Install them like this: <code>sudo apt install mtools build-essential nasm</code>.</li>
+              <li>WSL (Windows Subsystem for Linx) with Ubuntu installed and the same tings as above.</li>
+              <li>Our Docker image. You can run it like this: <code>docker run -it --rm ghcr.io/theultimatefoxos/foxos-toolchain:latest</code>. An easy way to have this setup would be to open a command line or terminal window at a directory on your host machine with FoxOS cloned and run this: <code>docker run -it --rm -v $PWD:/root/FoxOS ghcr.io/theultimatefoxos/foxos-toolchain:latest</code> to mount it at <code>/root/FoxOS</code>.</li>
+            </ul>
+            <br>
+            Then simply run one of the following:<br>
           </p>
           <ul>
             <li><code>make</code>: build the project.</li>
@@ -85,7 +90,7 @@
           <h1>Running</h1>
           <p>
             To run this OS, you can either use a VM or a bootable USB. See the building section for more info on how to build them.<br>
-            How to start:<br>
+            How to start:
           </p>
           <ul>
             <li><strong>QEMU</strong>: Use make <code>make run</code> to build and launch QEMU with the correct configuration.</li>
