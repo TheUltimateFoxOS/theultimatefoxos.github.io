@@ -2,143 +2,111 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <link rel="stylesheet" href="/style.css">
     <link rel="stylesheet" href="/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
     <title>FoxOS - Home</title>
   </head>
   <body>
-    <div class="top">
-      <div class="bar orange card left-align large">
-        <a class="bar-item button hide-medium hide-large right padding-large hover-white large orange" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-        <a href="/" class="bar-item button padding-large white">Home</a>
-        <a href="/about/" class="bar-item button hide-small padding-large hover-white">About Us</a>
+    <div class="w3-top">
+      <div class="w3-bar w3-border w3-border-orange w3-orange w3-card w3-large fox-bar">
+        <a href="/" class="w3-bar-item w3-button w3-hover-none w3-border-orange w3-bottombar w3-hover-border-black">Home</a>
+        <a href="/about/" class="w3-bar-item w3-button w3-hover-none w3-border-orange w3-bottombar w3-hover-border-black">About us</a>
+        <a href="https://github.com/TheUltimateFoxOS" class="w3-bar-item w3-button w3-hover-none w3-border-orange w3-bottombar w3-hover-border-black">GitHub</a>
       </div>
     </div>
-    <header class="container orange center" style="padding:50px 16px">
-      <h1 class="margin jumbo">FoxOS</h1>
-      <p class="xlarge">Welcome to the FoxOS website!</p>
+    
+    <header class="w3-container w3-orange w3-center" style="padding:50px 16px">
+      <h1 class="w3-margin w3-jumbo">FoxOS</h1>
+      <p class="w3-xlarge">Welcome to the FoxOS website!</p>
     </header>
-    <div class="row-padding padding-64 container">
-      <div class="content">
-        <div class="twothird">
-          <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheUltimateFoxOS%2FFoxOS&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false" alt="Hits"></a>
-          <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
-          <a href="https://discord.gg/qfYBHFWDcK"><img src="https://img.shields.io/discord/810910573864550410.svg?color=%237289da&amp;label=discord" alt="Discord"></a>
-          <a href="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml"><img src="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml/badge.svg" alt="Automatic Release"></a>
-          <p>
-            Our goal is to develop an operation system that focuses on the terminal, performence and reliability. We hope to provide you with a functionnal, performant and stable OS. And we do that together, everyone can help!<br />
-            <br />
-            Here are some links for the project:
-            <ul>
-              <li>Our <a href="https://github.com/TheUltimateFoxOS/FoxOS">github repository</a>!</li>
-              <li>Our <a href="https://discord.gg/qfYBHFWDcK">Discod</a></li>
-              <li><a href="/about/">About us</a></li>
-            </ul>
-          </p>
-          <img class="w3-image" src="https://github.com/TheUltimateFoxOS/FoxOS/releases/download/latest/foxos.jpg">
+    
+    <div class="fox-text">
+      <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheUltimateFoxOS%2FFoxOS&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false" alt="Hits"></a>
+      <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
+      <a href="https://discord.gg/qfYBHFWDcK"><img src="https://img.shields.io/discord/810910573864550410.svg?color=%237289da&amp;label=discord" alt="Discord"></a>
+      <a href="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml"><img src="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml/badge.svg" alt="Automatic Release"></a><br /><br />
+      
+      Our goal is to develop an operation system that focuses on the terminal, performence and reliability. We hope to provide you with a functionnal, performant and stable OS. And we do that together, everyone can help!<br />
+      <br />
+      Here are some links for the project:
+      <ul>
+        <li>Our <a href="https://github.com/TheUltimateFoxOS/FoxOS">github repository</a>!</li>
+        <li>Our <a href="https://discord.gg/qfYBHFWDcK">Discod</a></li>
+        <li><a href="/about/">About us</a></li>
+      </ul>
+      <img class="w3-image" src="https://github.com/TheUltimateFoxOS/FoxOS/releases/download/latest/foxos.jpg">
+      <hr>
+      
+      <h1>Building</h1>
+      Before you build the project, you need to clone the submodules. To do so, run:
+      <pre>git submodule update --init --recursive</pre>
+      To build this OS, you need one of these:
+      <ul>
+        <li>
+          <b>A 64bit Ubuntu or Debian based OS</b> that you can install the following pachages on:
+          <pre>sudo apt install mtools lbzip2 curl bison flex gcc g++ unzip dosfstools automake build-essential nasm qemu-utils git</pre>
+          We recommend you run <code>toolchain.sh</code> to build binaries that will be compatible with FoxOS.
+        </li>
+        <li><b>WSL (Windows Subsystem for Linx) with Ubuntu installed</b> and the same tings as above.</li>
+        <li>
+          <b>Our Docker image</b>. You can run it like this:
+          <pre>docker run -it --rm ghcr.io/theultimatefoxos/foxos-toolchain:latest</pre>
+          An easy way to have this setup would be to open a command line or terminal window at a directory on your host machine with FoxOS cloned and run this:
+          <pre>docker run -it --rm -v $PWD:/root/FoxOS ghcr.io/theultimatefoxos/foxos-toolchain:latest</pre>
+          To mount it at <code>/root/FoxOS</code>.
+        </li>
+        <li>
+          <b>An intel Mac</b>. You need to make sure to have these commands: <code>curl</code>, <code>zip</code>/<code>unzip</code>, <code>make</code>, <code>brew</code> and <code>gcc</code>. First run:
+          <pre>brew install mtools</pre>
+          And then run <code>toolchain_mac.sh</code>. To be able to build the bootloader, you need to get <code>elf.h</code> from <code>/usr/include/elf.h</code> on Ubuntu and put it in <code>FoxOS-bootloader/inc</code>.
+        </li>
+      </ul>
+      Then simply run one of the following:
+      <ul>
+        <li><code>make</code>: build the project.</li>
+        <li><code>make img</code>: package the .img file.</li>
+        <li><code>make macos-img</code>: <b>This is the only build command that will work for Macos!</b></li>
+        <li><code>make run</code>: To build and run FoxOS.</li>
+        <li><code>make run-macos</code>: Use this to build and run on a Mac.</li>
+        <li><code>make usb</code>: build a bootable USB. <b>The USB must be formatted with FAT32!</b></li>
+      </ul>
+      <hr>
+      
+      <h1>Other make commands</h1>
+      <ul>
+        <li><code>make clean</code>: clear all the built files.</li>
+        <li><code>make debug</code>: build and debug using <a href="https://deno.land/">deno</a>.</li>
+        <li><code>make run-dbg</code>: start a screen for QEMU so you can debug using gdb.</li>
+        <li><code>make vmdk</code>: build a <code>.vmdk</code> file.</li>
+        <li><code>make vdi</code>: build a <code>.vdi</code> file.</li>
+        <li><code>make qcow2</code>: build a <code>.qcow2</code> file.</li>
+      </ul>
+      <hr>
+      
+      <h1>Contributing</h1>
+      Feel free to fix a bug, implement a feature or any other change you thing would be good. If you want to contact us, join our <a href="https://discord.gg/qfYBHFWDcK">Discord</a>, we are there to help with any question you may have. Or you can <a href="https://github.com/TheUltimateFoxOS/FoxOS/issues/new/choose">create an issue</a>.
+      <hr>
+      
+      <h1>Running</h1>
+      To run this OS, you can either use a VM or a bootable USB. See the building section for more info on how to build them.<br />
+      How to start:
+      <ul>
+        <li><b>QEMU</b>: Use <code>make run</code> to build and launch QEMU with the correct configuration.</li>
+        <li><b>VirtalBox</b>: Use <code>make qcow2</code> to build a <code>.qcow2</code> image file and create a VM to which you add this <code>.qcow2</code>. Then you need to enable EFI under "System" in your VM's config. Then run it!</li>
+      </ul>
+      If you want to add documentation to booting on different software, feel free to do so.
+      <hr>
+      
+      <h1>Our Discord</h1>
+      <div class="w3-row">
+        <div class="fox-discord w3-col w3-container w3-right">
+          <iframe src="https://discord.com/widget?id=810910573864550410&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
         </div>
-      </div>
-    </div>
-    <div class="row-padding light-grey padding-64 container">
-      <div class="content">
-        <div class="third center">
-          <i class="fa fa-coffee padding-64 text-red margin-right"></i>
-        </div>
-        <div class="twothird">
-          <h2>Building</h2>
-          <p>
-            Before you build the project, you need to clone the submodules. To do so, run:
-            <pre>git submodule update --init --recursive</pre>
-            To build this OS, you need one of these:
-            <ul>
-              <li>
-                <b>A 64bit Ubuntu or Debian based OS</b> that you can install the following pachages on:
-                <pre>sudo apt install mtools lbzip2 curl bison flex gcc g++ unzip dosfstools automake build-essential nasm qemu-utils git</pre>
-                We recommend you run <code>toolchain.sh</code> to build binaries that will be compatible with FoxOS.
-              </li>
-              <li><b>WSL (Windows Subsystem for Linx) with Ubuntu installed</b> and the same tings as above.</li>
-              <li>
-                <b>Our Docker image</b>. You can run it like this:
-                <pre>docker run -it --rm ghcr.io/theultimatefoxos/foxos-toolchain:latest</pre>
-                An easy way to have this setup would be to open a command line or terminal window at a directory on your host machine with FoxOS cloned and run this:
-                <pre>docker run -it --rm -v $PWD:/root/FoxOS ghcr.io/theultimatefoxos/foxos-toolchain:latest</pre>
-                To mount it at <code>/root/FoxOS</code>.
-              </li>
-              <li>
-                <b>An intel Mac</b>. You need to make sure to have these commands: <code>curl</code>, <code>zip</code>/<code>unzip</code>, <code>make</code>, <code>brew</code> and <code>gcc</code>. First run:
-                <pre>brew install mtools</pre>
-                And then run <code>toolchain_mac.sh</code>. To be able to build the bootloader, you need to get <code>elf.h</code> from <code>/usr/include/elf.h</code> on Ubuntu and put it in <code>FoxOS-bootloader/inc</code>.
-              </li>
-            </ul>
-            
-            Then simply run one of the following:
-            <ul>
-              <li><code>make</code>: build the project.</li>
-              <li><code>make img</code>: package the .img file.</li>
-              <li><code>make macos-img</code>: <b>This is the only build command that will work for Macos!</b></li>
-              <li><code>make run</code>: To build and run FoxOS.</li>
-              <li><code>make run-macos</code>: Use this to build and run on a Mac.</li>
-              <li><code>make usb</code>: build a bootable USB. <b>The USB must be formatted with FAT32!</b></li>
-            </ul>
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row-padding padding-64 container">
-      <div class="content">
-        <div class="twothird">
-          <h1>Other make commands</h1>
-          <ul>
-            <li><code>make clean</code>: clear all the built files.</li>
-            <li><code>make debug</code>: build and debug using <a href="https://deno.land/">deno</a>.</li>
-            <li><code>make run-dbg</code>: start a screen for QEMU so you can debug using gdb.</li>
-            <li><code>make vmdk</code>: build a <code>.vmdk</code> file.</li>
-            <li><code>make vdi</code>: build a <code>.vdi</code> file.</li>
-            <li><code>make qcow2</code>: build a <code>.qcow2</code> file.</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row-padding light-grey padding-64 container">
-      <div class="content">
-        <div class="third center">
-          <i class="fa fa-coffee padding-64 text-red margin-right"></i>
-        </div>
-        <div class="twothird">
-          <h2>Contributing</h2>
-          <p>
-            Feel free to fix a bug, implement a feature or any other change you thing would be good. If you want to contact us, join our <a href="https://discord.gg/qfYBHFWDcK">Discord</a>, we are there to help with any question you may have. Or you can <a href="https://github.com/TheUltimateFoxOS/FoxOS/issues/new/choose">create an issue</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row-padding padding-64 container">
-      <div class="content">
-        <div class="twothird">
-          <h1>Running</h1>
-          <p>
-            To run this OS, you can either use a VM or a bootable USB. See the building section for more info on how to build them.<br />
-            How to start:
-            <ul>
-              <li><b>QEMU</b>: Use <code>make run</code> to build and launch QEMU with the correct configuration.</li>
-              <li><b>VirtalBox</b>: Use <code>make qcow2</code> to build a <code>.qcow2</code> image file and create a VM to which you add this <code>.qcow2</code>. Then you need to enable EFI under "System" in your VM's config. Then run it!</li>
-            </ul>
-            If you want to add documentation to booting on different software, feel free to do so.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="row-padding light-grey padding-64 container">
-      <div class="content">
-        <div class="third center">
-          <i class="fa fa-coffee padding-64 text-red margin-right"></i>
-        </div>
-        <div class="twothird">
-          <h2>Our Discord</h2>
-          <p>
-            Here is the link to our <a href="https://discord.gg/qfYBHFWDcK">Discord</a>.
-          </p>
+        <div class="w3-rest w3-container">
+          Come and join us to talk about FoxOS, or any other OS or just come and have fun.<br />
+          You have questions? Or just want to hang out? This is the place to do so!
         </div>
       </div>
     </div>

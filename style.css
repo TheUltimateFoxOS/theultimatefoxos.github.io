@@ -1,2 +1,57 @@
 pre{background:#f4f4f4;border:1px solid #ddd;border-left:3px solid #f36d33;color:#666;page-break-inside:avoid;font-family:monospace;font-size:15px;line-height:1.6;margin-bottom:1.6em;max-width:100%;overflow:auto;padding:1em 1.5em;display:block;word-wrap:break-word}
 code{background-color:#d9d9d9;padding-left:4px;padding-right:4px;font-family:monospace}
+
+.fox-text {
+  margin: auto;
+  width: 70%;
+  padding: 10px;
+}
+.fox-text .fox-text-img {
+  width: 100%;
+  height: auto;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.fox-discord {
+  width: 366px !important;
+}
+.fox-pfp {
+  display: block;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.fox-pfp-container {
+  width: 256px !important;
+}
+.fox-bar {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
+
+@media screen and (max-width: 800px) {
+  .fox-text {
+    margin: auto;
+    width: 70%;
+    padding: 10px;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .fox-discord {
+    width: 100% !important;
+  }
+  .fox-pfp {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .fox-pfp-container {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fox-text {
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
