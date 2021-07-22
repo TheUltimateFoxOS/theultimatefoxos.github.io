@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/w3.css">
     <title>FoxOS - Home</title>
   </head>
   <body>
@@ -27,8 +28,15 @@
           <a href="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml"><img src="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml/badge.svg" alt="Automatic Release"></a>
           <p>
             Our goal is to develop an operation system that focuses on the terminal, performence and reliability. We hope to provide you with a functionnal, performant and stable OS. And we do that together, everyone can help!<br />
-            Here is the link to our <a href="https://github.com/TheUltimateFoxOS/FoxOS">github repository</a> if you want to!
+            <br />
+            Here are some links for the project:
+            <ul>
+              <li>Our <a href="https://github.com/TheUltimateFoxOS/FoxOS">github repository</a>!</li>
+              <li>Our <a href="https://discord.gg/qfYBHFWDcK">Discod</a></li>
+              <li><a href="/about/">About us</a></li>
+            </ul>
           </p>
+          <img class="w3-image" src="https://github.com/TheUltimateFoxOS/FoxOS/releases/download/latest/foxos.jpg">
         </div>
       </div>
     </div>
@@ -42,20 +50,38 @@
           <p>
             Before you build the project, you need to clone the submodules. To do so, run:
             <pre>git submodule update --init --recursive</pre>
-            To build this OS, you have two options, you need one of these:
+            To build this OS, you need one of these:
             <ul>
-              <li>A 64bit Ubuntu or Debian based OS that you can install the following pachages on: <code>mtools</code>, <code>build-essential</code> and <code>nasm</code>. Install them like this: <code>sudo apt install mtools build-essential nasm</code>.</li>
-              <li>WSL (Windows Subsystem for Linx) with Ubuntu installed and the same tings as above.</li>
-              <li>Our Docker image. You can run it like this: <code>docker run -it --rm ghcr.io/theultimatefoxos/foxos-toolchain:latest</code>. An easy way to have this setup would be to open a command line or terminal window at a directory on your host machine with FoxOS cloned and run this: <code>docker run -it --rm -v $PWD:/root/FoxOS ghcr.io/theultimatefoxos/foxos-toolchain:latest</code> to mount it at <code>/root/FoxOS</code>.</li>
+              <li>
+                <b>A 64bit Ubuntu or Debian based OS</b> that you can install the following pachages on:
+                <pre>sudo apt install mtools lbzip2 curl bison flex gcc g++ unzip dosfstools automake build-essential nasm qemu-utils git</pre>
+                We recommend you run <code>toolchain.sh</code> to build binaries that will be compatible with FoxOS.
+              </li>
+              <li><b>WSL (Windows Subsystem for Linx) with Ubuntu installed</b> and the same tings as above.</li>
+              <li>
+                <b>Our Docker image</b>. You can run it like this:
+                <pre>docker run -it --rm ghcr.io/theultimatefoxos/foxos-toolchain:latest</pre>
+                An easy way to have this setup would be to open a command line or terminal window at a directory on your host machine with FoxOS cloned and run this:
+                <pre>docker run -it --rm -v $PWD:/root/FoxOS ghcr.io/theultimatefoxos/foxos-toolchain:latest</pre>
+                To mount it at <code>/root/FoxOS</code>.
+              </li>
+              <li>
+                <b>An intel Mac</b>. You need to make sure to have these commands: <code>curl</code>, <code>zip</code>/<code>unzip</code>, <code>make</code>, <code>brew</code> and <code>gcc</code>. First run:
+                <pre>brew install mtools</pre>
+                And then run <code>toolchain_mac.sh</code>. To be able to build the bootloader, you need to get <code>elf.h</code> from <code>/usr/include/elf.h</code> on Ubuntu and put it in <code>FoxOS-bootloader/inc</code>.
+              </li>
             </ul>
-            <br>
-            Then simply run one of the following:<br>
+            
+            Then simply run one of the following:
+            <ul>
+              <li><code>make</code>: build the project.</li>
+              <li><code>make img</code>: package the .img file.</li>
+              <li><code>make macos-img</code>: <b>This is the only build command that will work for Macos!</b></li>
+              <li><code>make run</code>: To build and run FoxOS.</li>
+              <li><code>make run-macos</code>: Use this to build and run on a Mac.</li>
+              <li><code>make usb</code>: build a bootable USB. <b>The USB must be formatted with FAT32!</b></li>
+            </ul>
           </p>
-          <ul>
-            <li><code>make</code>: build the project.</li>
-            <li><code>make img</code>: package the <code>.img</code> file.</li>
-            <li><code>make usb</code>: build a bootable USB. <strong>The USB must be formatted with FAT32!</strong> You will also need <code>zip</code> installed on your building machine. To install, simply run <code>sudo apt install zip</code>.</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -67,6 +93,9 @@
             <li><code>make clean</code>: clear all the built files.</li>
             <li><code>make debug</code>: build and debug using <a href="https://deno.land/">deno</a>.</li>
             <li><code>make run-dbg</code>: start a screen for QEMU so you can debug using gdb.</li>
+            <li><code>make vmdk</code>: build a <code>.vmdk</code> file.</li>
+            <li><code>make vdi</code>: build a <code>.vdi</code> file.</li>
+            <li><code>make qcow2</code>: build a <code>.qcow2</code> file.</li>
           </ul>
         </div>
       </div>
@@ -89,14 +118,14 @@
         <div class="twothird">
           <h1>Running</h1>
           <p>
-            To run this OS, you can either use a VM or a bootable USB. See the building section for more info on how to build them.<br>
+            To run this OS, you can either use a VM or a bootable USB. See the building section for more info on how to build them.<br />
             How to start:
+            <ul>
+              <li><b>QEMU</b>: Use <code>make run</code> to build and launch QEMU with the correct configuration.</li>
+              <li><b>VirtalBox</b>: Use <code>make qcow2</code> to build a <code>.qcow2</code> image file and create a VM to which you add this <code>.qcow2</code>. Then you need to enable EFI under "System" in your VM's config. Then run it!</li>
+            </ul>
+            If you want to add documentation to booting on different software, feel free to do so.
           </p>
-          <ul>
-            <li><strong>QEMU</strong>: Use make <code>make run</code> to build and launch QEMU with the correct configuration.</li>
-            <li><strong>VirtalBox</strong>: You will need to create an optical drive (<code>.iso</code>, <code>.viso</code>, ...) from the <code>.img</code> file. Then you need to enable EFI under &quot;System&quot; in your VM&#39;s config. Then run it!</li>
-          </ul>
-          <p>If you want to add documentation to booting on different software, feel free to do so.</p>
         </div>
       </div>
     </div>
