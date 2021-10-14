@@ -24,16 +24,32 @@
       <h1 class="w3-margin w3-jumbo">FoxOS</h1>
       <p class="w3-xlarge">Welcome to the FoxOS website!</p>
     </header>
+
+    <div class="fox-text" id="oficial">
+      <h2>Official kernel modules:</h2>
+      <ul>
+        <li><a href="https://github.com/TheUltimateFoxOS/FoxOS-module">Example module</a></li>
+      </ul>
+    </div>
+
+    <div class="fox-text" id="semi-official">
+      <h2>Semi Official kernel modules:</h2>
+      <ul>
+        <li><a href="https://github.com/Glowman554/intel_gpu">Intel gpu driver</a></li>
+        <li><a href="https://github.com/Glowman554/laihost">Lai implementation</a></li>
+      </ul>
+    </div>
+
+    <div class="fox-text" id="unofficial">
+      <h2>Unofficial kernel modules:</h2>
+      <ul>
+        <li><p>Nothing at the moment feel free to add one just open a pull request</p></li>
+      </ul>
+      </div>
     
-    <div class="fox-text" id="readme">
-      <script>
-        async function get_readme() {
-          var md = await (await fetch("https://raw.githubusercontent.com/TheUltimateFoxOS/FoxOS/main/README.md")).text();
-          const markdown_render = new showdown.Converter().makeHtml(md);
-          document.getElementById("readme").innerHTML = markdown_render;
-        }
-        get_readme();
-      </script>
+    <div class="fox-text" id="build-script">
+      <h2>Simple build script for all Official and semi-official modules:</h2>
+      <script src="https://gist.github.com/Glowman554/474b36a2cb2247eb148718b8daa7a05e.js"></script>
     </div>
   </body>
 </html>
