@@ -29,7 +29,7 @@ hr {border: 0px; border-top: 1px solid #eeeeee; margin: 20px 0;}
   padding: 10px;
 }
 .fox-text .fox-text-img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   padding-bottom: env(safe-area-inset-bottom);
 }
@@ -72,7 +72,6 @@ hr {border: 0px; border-top: 1px solid #eeeeee; margin: 20px 0;}
   width: 100%;
   overflow: hidden;
   position: fixed;
-  top: 0;
   z-index: 1;
 }
 .fox-bar a {
@@ -159,9 +158,6 @@ hr {border: 0px; border-top: 1px solid #eeeeee; margin: 20px 0;}
     display: block;
   }
 
-  .fox-bar.responsive {
-    position: relative;
-  }
   .fox-bar.responsive .icon {
     position: absolute;
     top: 0px;
