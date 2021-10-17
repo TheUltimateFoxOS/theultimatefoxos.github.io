@@ -6,24 +6,27 @@
     <meta name="theme-color" content="#f37735">
 
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="/main.js" defer></script>
     <title>FoxOS - About</title>
   </head>
   <body>
-    <div class="w3-top">
-      <div class="w3-bar w3-border w3-border-orange w3-orange w3-card w3-large fox-bar">
-        <a href="/" class="w3-bar-item w3-button w3-hover-none w3-border-orange w3-bottombar w3-hover-border-black">Home</a>
-        <a href="/about/" class="w3-bar-item w3-button w3-hover-none w3-border-orange w3-bottombar w3-hover-border-black">About us</a>
-        <a href="/FoxOS-kernel/" class="w3-bar-item w3-button w3-hover-none w3-border-orange w3-bottombar w3-hover-border-black">Docs</a>
-        <a href="/modules/" class="w3-bar-item w3-button w3-hover-none w3-border-orange w3-bottombar w3-hover-border-black">Kernel modules</a>
-        <a href="https://github.com/TheUltimateFoxOS" class="w3-bar-item w3-button w3-hover-none w3-border-orange w3-bottombar w3-hover-border-black">GitHub</a>
-      </div>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     
-    <header class="w3-container w3-orange w3-center" style="padding:50px 16px">
-      <h1 class="w3-margin w3-jumbo">FoxOS</h1>
-      <p class="w3-xlarge">Welcome to the FoxOS website!</p>
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
     </header>
     
     <div class="fox-text">
@@ -31,27 +34,28 @@
       We are two developers full of ambition to give you the best experience ever!<br />
       <br />
       <hr>
-      <div class="w3-row">
-        <div class="fox-pfp-container w3-col w3-container w3-right">
+      <div class="fox-row">
+        <div class="fox-pfp-container fox-row-right">
           <img class="fox-pfp" src="https://avatars.githubusercontent.com/ImDaBigBoss?size=128">
         </div>
-        <div class="w3-rest w3-container">
+        <div class="fox-row-rest">
           <a href="https://github.com/ImDaBigBoss">ImDaBigBoss</a><br />
           I do a lot of coding, I'm interested in new things and I love experimenting! I mostly make Minecraft Spigot plugins and code for FoxOS.<br />
           I can code C/C++, Java, C#, HTML/JS/CSS. But I'm also familiar with Python and NodeJS.
         </div>
       </div>
       <hr>
-      <div class="w3-row">
-        <div class="fox-pfp-container  w3-col w3-container w3-right">
+      <div class="fox-row">
+        <div class="fox-pfp-container fox-row-right">
           <img class="fox-pfp" src="https://avatars.githubusercontent.com/Glowman554?size=128">
         </div>
-        <div class="w3-rest w3-container">
+        <div class="fox-row-rest">
           <a href="https://github.com/Glowman554">Glowman554</a><br />
           I'm Janick aka Glowman554 and I'm 16 years old. I decided to go 3 more years to school to make my A-Level.<br />
           I can code Java, JS, C/C++ and Python.
         </div>
       </div>
+      <hr>
     </div>
   </body>
 </html>

@@ -1,5 +1,27 @@
-pre{background:#f4f4f4;border:1px solid #ddd;border-left:3px solid #f36d33;color:#666;page-break-inside:avoid;font-family:monospace;font-size:15px;line-height:1.6;margin-bottom:1.6em;max-width:100%;overflow:auto;padding:1em 1.5em;display:block;word-wrap:break-word}
-code{background-color:#d9d9d9;padding-left:4px;padding-right:4px;font-family:monospace}
+pre {background: #f4f4f4; border: 1px solid #ddd; border-left: 3px solid #f36d33; color: #666; page-break-inside: avoid; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word}
+code {background-color: #d9d9d9; padding-left: 4px; padding-right: 4px; font-family: monospace}
+
+html, body {
+  font-family: 'Noto Sans JP',sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+h1 {font-size: 36px}
+h2 {font-size: 30px}
+h3 {font-size: 24px}
+h4 {font-size: 20px}
+h5 {font-size: 18px}
+h6 {font-size: 16px}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-weight: 400;
+  margin: 10px 0
+}
+
+a {color: inherit}
+hr {border: 0px; border-top: 1px solid #eeeeee; margin: 20px 0;}
 
 .fox-text {
   margin: auto;
@@ -20,18 +42,89 @@ code{background-color:#d9d9d9;padding-left:4px;padding-right:4px;font-family:mon
   margin-right: 0px;
 }
 .fox-pfp-container {
-  width: 256px !important;
+  width: 128px !important;
 }
+.fox-row:before,.fox-row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+.fox-row .fox-row-right {
+  float: right !important;
+  padding: 10px;
+}
+.fox-row .fox-row-rest {
+  overflow: hidden;
+  padding: 10px;
+}
+
 .fox-bar {
   padding-left: env(safe-area-inset-left);
   padding-right: env(safe-area-inset-right);
+
+  background-color: #f37735 !important;
+  font-size: 18px !important;
+
+  border: 1px solid #f37735 !important;
+  border-color: #f37735 !important;
+
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+.fox-bar a {
+  padding: 8px 16px;
+  float: left;
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  
+  white-space: normal;
+  overflow: hidden;
+
+  border-bottom: 6px solid #f37735;
+  text-decoration: none;
+}
+.fox-bar a:hover {
+  border-bottom: 6px solid #000000;
+}
+.fox-bar .icon {
+  display: none;
+}
+
+.fox-header {
+  background-color: #f37735 !important;
+}
+.fox-header-title {
+  text-align: center !important;
+  font-size: 64px !important;
+}
+.fox-header-subtitle {
+  text-align: center !important;
+  font-size: 24px !important;
 }
 
 .fox-a-nodecoration li a {
   text-decoration: none !important;
 }
+.fox-ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
 .fox-ul li {
   padding: 0px !important;
+  border-bottom: 1px solid #ddd;
+}
+.fox-ul li:last-child {
+  padding: 0px !important;
+  border-bottom: none;
+}
+.fox-ul li:hover {
+  background-color:#ccc
 }
 .fox-ul li a {
   padding: 8px 16px;
@@ -56,6 +149,39 @@ code{background-color:#d9d9d9;padding-left:4px;padding-right:4px;font-family:mon
   }
   .fox-pfp-container {
     width: 100% !important;
+  }
+
+  .fox-bar a:not(:first-child) {
+    display: none;
+  }
+  .fox-bar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .fox-bar.responsive {
+    position: relative;
+  }
+  .fox-bar.responsive .icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  .fox-bar.responsive a {
+    padding: 8px 16px;
+    float: none;
+    display: block;
+    text-align: left;
+    cursor: pointer;
+  
+    white-space: normal;
+    overflow: hidden;
+
+    border-bottom: 6px solid #f37735;
+    text-decoration: none;
+  }
+  .fox-bar a:hover {
+    border-bottom: 6px solid #f37735;
   }
 }
 
