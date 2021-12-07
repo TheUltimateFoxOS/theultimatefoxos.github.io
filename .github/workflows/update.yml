@@ -16,5 +16,4 @@ jobs:
       with:
         url: 'https://theultimatefoxos.dev/kerneldoc-update.php'
         method: 'POST'
-        secret: ${{ secrets.PHP_UPDATE_SECRET }}
-        updatedocs: 'false'
+        data: 'secret=${{ secrets.PHP_UPDATE_SECRET }}&updatedocs=false'
