@@ -1,0 +1,19 @@
+name: Automatic update
+
+on:
+  push:
+    branches: [ master ]
+    
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps: 
+    - name: Send request to server
+      uses: fjogeleit/http-request-action@master
+        url: 'https://theultimatefoxos.dev/update.php'
+        method: 'POST'
+        secret: ${{ secrets.PHP_UPDATE_SECRET }}
+        updatedocs: 'false'
