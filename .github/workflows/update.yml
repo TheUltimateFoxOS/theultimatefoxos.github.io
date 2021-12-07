@@ -14,7 +14,7 @@ jobs:
     - name: Send request to server
       uses: fjogeleit/http-request-action@master
       with:
-        url: 'https://theultimatefoxos.dev/update.php'
+        url: 'https://theultimatefoxos.dev/kerneldoc-update.php'
         method: 'POST'
         secret: ${{ secrets.PHP_UPDATE_SECRET }}
         updatedocs: 'false'
