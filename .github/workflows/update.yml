@@ -12,8 +12,8 @@ jobs:
 
     steps: 
     - name: Send request to server
-      uses: fjogeleit/http-request-action@master
+      uses: satak/webrequest-action@master
       with:
-        url: 'https://theultimatefoxos.dev/kerneldoc-update.php'
-        method: 'POST'
-        data: 'secret=${{ secrets.PHP_UPDATE_SECRET }}&updatedocs=false'
+        url: https://theultimatefoxos.dev/kerneldoc-update.php
+        method: POST
+        payload: '{"secret": "${{ secrets.PHP_UPDATE_SECRET }}"},{"updatedocs": "false"}'
