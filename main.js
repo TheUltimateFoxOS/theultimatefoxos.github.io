@@ -6,3 +6,7 @@ function nav_bar_expand() {
 		main_bar.className = "fox-bar";
 	}
 }
+
+function add_nav_bar(){
+	$("#includedContent").load("/navbar.html"); 
+  }
