@@ -8,5 +8,6 @@ function nav_bar_expand() {
 }
 
 function add_nav_bar(){
+	
 	$("#includedContent").load("/navbar.html"); 
   }
