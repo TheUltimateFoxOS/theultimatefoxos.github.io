@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://theultimatefoxos.dev/</loc>
+		<loc>https://theultimatefoxos.dev/src/about/</loc>
 	</url>
 	<url>
-		<loc>https://theultimatefoxos.dev/about/</loc>
+		<loc>https://theultimatefoxos.dev/src/contact/</loc>
 	</url>
 	<url>
-		<loc>https://theultimatefoxos.dev/FoxOS-kernel/</loc>
+		<loc>https://theultimatefoxos.dev/src/</loc>
 	</url>
 	<url>
-		<loc>https://theultimatefoxos.dev/modules/</loc>
+		<loc>https://theultimatefoxos.dev/src/modules/</loc>
 	</url>
 	<url>
-		<loc>https://theultimatefoxos.dev/contact/</loc>
+		<loc>https://theultimatefoxos.dev/src/scripts/main.js</loc>
 	</url>
-</urlset> 
+	<url>
+		<loc>https://theultimatefoxos.dev/src/style.css</loc>
+	</url>
+</urlset>
