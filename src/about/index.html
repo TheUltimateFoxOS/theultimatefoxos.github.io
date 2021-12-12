@@ -1,21 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#f37735">
-
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <script src="/main.js" defer></script>
-    <script src="/scripts/jquery-min.js"></script> 
+    {{content.head}}
     <title>FoxOS - About</title>
   </head>
-  <body href="javascript:void(0);" onload="add_nav_bar()">
-    <div id="includedContent"></div>
+  <body>
+    {{content.navbar}}
 
     
     <div class="fox-text">

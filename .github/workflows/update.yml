@@ -10,7 +10,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    steps: 
+    steps:
+    - name: Perform Checkout
+      uses: actions/checkout@v2
+    - uses: actions/setup-node@v2
+      with:
+        node-version: '14'
+    - name: Build files
+      run: node build.js
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./out
+        publish_branch: gh-pages
     - name: Send request to server
       run: curl -X POST -F 'secret=${{ secrets.PHP_UPDATE_SECRET }}' -F 'updatedocs=false' https://theultimatefoxos.dev/kerneldoc-update.php
     - name: Tell google to check sitemap

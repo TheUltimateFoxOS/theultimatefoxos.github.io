@@ -1,22 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#f37735">
-
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
-    <script src="/main.js" defer></script>
-    <script src="/scripts/jquery-min.js"></script> 
+    {{content.head}}
     <title>FoxOS - Home</title>
   </head>
-  <body href="javascript:void(0);" onload="add_nav_bar()">
+  <body>
+    {{content.navbar}}
 
-    <div id="includedContent"></div>
     <div class="fox-text">
       <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheUltimateFoxOS%2FFoxOS&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false" alt="Hits"></a>
       <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
@@ -29,9 +19,8 @@
       <ul>
         <li>Our <a href="https://github.com/TheUltimateFoxOS/FoxOS">github repository</a>!</li>
         <li>Our <a href="https://discord.gg/qfYBHFWDcK">Discord</a></li>
-        <li><a href="/about/">About us</a></li>
       </ul>
-      <img class="fox-text-img" src="https://github.com/TheUltimateFoxOS/FoxOS/releases/download/latest/foxos.jpg">
+      <img class="fox-text-img" src="https://github.com/TheUltimateFoxOS/FoxOS/releases/download/latest/foxos.jpg" alt="OS screenshot">
       <hr>
       
       <h1>Building</h1>
