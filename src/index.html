@@ -2,102 +2,41 @@
 <html lang="en">
   <head>
     {{content.head}}
+    <script src="/scripts/showdown.min.js"></script>
     <title>FoxOS - Home</title>
   </head>
   <body>
     {{content.navbar}}
 
-    <div class="fox-text">
-      <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FTheUltimateFoxOS%2FFoxOS&amp;count_bg=%2379C83D&amp;title_bg=%23555555&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=hits&amp;edge_flat=false" alt="Hits"></a>
-      <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License: MIT"></a>
-      <a href="https://discord.gg/qfYBHFWDcK"><img src="https://img.shields.io/discord/810910573864550410.svg?color=%237289da&amp;label=discord" alt="Discord"></a>
-      <a href="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml"><img src="https://github.com/TheUltimateFoxOS/FoxOS/actions/workflows/release.yml/badge.svg" alt="Automatic Release"></a><br /><br />
-      
-      Our goal is to develop an operation system that focuses on the terminal, performance and reliability. We hope to provide you with a functional, performant and stable OS. And we do that together, everyone can help!<br />
-      <br />
-      Here are some links for the project:
-      <ul>
-        <li>Our <a href="https://github.com/TheUltimateFoxOS/FoxOS">github repository</a>!</li>
-        <li>Our <a href="https://discord.gg/qfYBHFWDcK">Discord</a></li>
-      </ul>
-      <img class="fox-text-img" src="https://github.com/TheUltimateFoxOS/FoxOS/releases/download/latest/foxos.jpg" alt="OS screenshot">
-      <hr>
-      
-      <h1>Building</h1>
-      Before you build the project, you need to clone the submodules. To do so, run:
-      <pre>git submodule update --init --recursive</pre>
-      To build this OS, you need one of these:
-      <ul>
-        <li>
-          <b>A 64bit Ubuntu or Debian based OS</b> that you can install the following pachages on:
-          <pre>sudo apt install mtools lbzip2 curl bison flex gcc g++ unzip dosfstools automake build-essential nasm qemu-utils git</pre>
-          We recommend you run <code>toolchain.sh</code> to build binaries that will be compatible with FoxOS.
-        </li>
-        <li><b>WSL (Windows Subsystem for Linx) with Ubuntu installed</b> and the same tings as above.</li>
-        <li>
-          <b>Our Docker image</b>. You can run it like this:
-          <pre>docker run -it --rm ghcr.io/theultimatefoxos/foxos-toolchain:latest</pre>
-          An easy way to have this setup would be to open a command line or terminal window at a directory on your host machine with FoxOS cloned and run this:
-          <pre>docker run -it --rm -v $PWD:/root/FoxOS ghcr.io/theultimatefoxos/foxos-toolchain:latest</pre>
-          To mount it at <code>/root/FoxOS</code>.
-        </li>
-        <li>
-          <b>A Mac</b>. You need to make sure to have these commands: <code>curl</code>, <code>zip</code>/<code>unzip</code>, <code>make</code>, <code>brew</code> and <code>gcc</code>. First run:
-          <pre>brew install mtools</pre>
-          <pre>brew install gdisk</pre>
-          And then run <code>toolchain_mac.sh</code>.
-        </li>
-      </ul>
-      Then simply run one of the following:
-      <ul>
-        <li><code>make</code>: build the project.</li>
-        <li><code>make img</code>: package the .img file.</li>
-        <li><code>make mac-img</code>: <b>This is the only build command that will work for Macos!</b></li>
-        <li><code>make run</code>: To build and run FoxOS.</li>
-        <li><code>make run-bios</code>: To run a BIOS version.</li>
-        <li><code>make usb</code>: build a bootable USB. <b>The USB must be formatted with FAT32!</b></li>
-      </ul>
-      <hr>
-      
-      <h1>Other make commands</h1>
-      <ul>
-        <li><code>make clean</code>: clear all the built files.</li>
-        <li><code>make debug</code>: build and debug using <a href="https://deno.land/">deno</a>.</li>
-        <li><code>make run-dbg</code>: start a screen for QEMU so you can debug using gdb.</li>
-        <li><code>make run-vnc</code>: start QEMU in VNC.</li>
-        <li><code>make run-dbg-bios</code>: Same as above, but BIOS.</li>
-        <li><code>make run-vnc-bios</code>: Same as above, but BIOS.</li>
-        <li><code>make screenshot</code>: Start QEMU in VNC and screenshot after 30 seconds into <code>foxos.jpg</code>.</li>
-        <li><code>make vmdk</code>: build a <code>.vmdk</code> file. (<b><code>make img</code> needs to have been run beforehand!</b>)</li>
-        <li><code>make vdi</code>: build a <code>.vdi</code> file. (<b><code>make img</code> needs to have been run beforehand!</b>)</li>
-        <li><code>make qcow2</code>: build a <code>.qcow2</code> file. (<b><code>make img</code> needs to have been run beforehand!</b>)</li>
-        <li><code>make vbox-setup</code>: setup a virtualbox vm (only works on linux)</li>
-      </ul>
-      <hr>
-      
-      <h1>Contributing</h1>
-      Feel free to fix a bug, implement a feature or any other change you thing would be good. If you want to contact us, join our <a href="https://discord.gg/qfYBHFWDcK">Discord</a>, we are there to help with any question you may have. Or you can <a href="https://github.com/TheUltimateFoxOS/FoxOS/issues/new/choose">create an issue</a>.
-      If you dont know what to implement you can take a look at our <a href="https://github.com/TheUltimateFoxOS/FoxOS/projects/1">todo list</a>.
-      <hr>
-      
-      <h1>Running</h1>
-      To run this OS, you can either use a VM or a bootable USB. See the building section for more info on how to build them.<br />
-      How to start:
-      <ul>
-        <li><b>QEMU</b>: Use <code>make run</code> to build and launch QEMU with the correct configuration.</li>
-        <li><b>VirtalBox</b>: Use <code>make qcow2</code> to build a <code>.qcow2</code> image file and create a VM to which you add this <code>.qcow2</code>. Then you need to enable EFI under "System" in your VM's config. Then run it!</li>
-      </ul>
-      If you want to add documentation to booting on different software, feel free to do so.
-      <hr>
-      
-      <h1>Our Discord</h1>
-      <div class="fox-row">
-        <div class="fox-discord fox-row-right">
-          <iframe src="https://discord.com/widget?id=810910573864550410&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        </div>
-        <div class="fox-row-rest">
-          Come and join us to talk about FoxOS, or any other OS or just come and have fun.<br />
-          You have questions? Or just want to hang out? This is the place to do so!
+    <div class="fox-text" id="readme">
+      <script>
+        async function get_readme() {
+          var md = await (await fetch("https://raw.githubusercontent.com/TheUltimateFoxOS/FoxOS/main/README.md")).text();
+
+          var markdown_render = new showdown.Converter().makeHtml(md);
+          markdown_render = markdown_render.split("<h2 id=\"ourdiscord\">")[0];
+          markdown_render = markdown_render.split("<h1 id=\"foxos\">FoxOS</h1>")[1];
+          markdown_render = markdown_render.split("<h2 id=\"").join("<hr>\n<h2 id=\"");
+          markdown_render = markdown_render.split("alt=\"screenshot\"").join("alt=\"screenshot\" class=\"fox-text-img\"");
+
+          const extra = document.getElementById("readme-extra").innerHTML;
+          document.getElementById("readme").innerHTML = markdown_render + extra;
+        }
+
+        get_readme();
+      </script>
+
+      <div id="readme-extra">
+        <hr>
+        <h2>Our Discord</h2>
+        <div class="fox-row">
+          <div class="fox-discord fox-row-right">
+            <iframe src="https://discord.com/widget?id=810910573864550410&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          </div>
+          <div class="fox-row-rest">
+            Come and join us to talk about FoxOS, or any other OS or just come and have fun.<br />
+            You have questions? Or just want to hang out? This is the place to do so!
+          </div>
         </div>
       </div>
     </div>

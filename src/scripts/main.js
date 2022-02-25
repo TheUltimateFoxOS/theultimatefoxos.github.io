@@ -1,4 +1,6 @@
-if (window.location.hostname != "theultimatefoxos.dev") {
+var should_check_domain = false;
+
+if (window.location.hostname != "theultimatefoxos.dev" && should_check_domain) {
   var nextpage = "https://theultimatefoxos.dev" + window.location.pathname + window.location.search;
   window.location.replace(nextpage);
 }
