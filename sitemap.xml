@@ -16,6 +16,9 @@
 		<loc>https://theultimatefoxos.dev/src/scripts/main.js</loc>
 	</url>
 	<url>
+		<loc>https://theultimatefoxos.dev/src/scripts/showdown.min.js</loc>
+	</url>
+	<url>
 		<loc>https://theultimatefoxos.dev/src/style.css</loc>
 	</url>
 </urlset>
