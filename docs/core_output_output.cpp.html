@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>output_device::putchar</h2>
+        <b>Signature:</b> <code>void output_device::putchar(char c) </code><br/>
+        <b>Description:</b> Prints a character to the output device<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char c</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>output_device::putstring</h2>
+        <b>Signature:</b> <code>void output_device::putstring(const char* str) </code><br/>
+        <b>Description:</b> Prints a string to the output device<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>const char* str</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/output/output.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

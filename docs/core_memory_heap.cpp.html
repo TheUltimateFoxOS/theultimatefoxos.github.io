@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>memory::initialize_heap</h2>
+        <b>Signature:</b> <code>void memory::initialize_heap(void* heap_address, size_t page_count) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* heap_address</code></li>
+          <li><code>size_t page_count</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>memory::free</h2>
+        <b>Signature:</b> <code>void memory::free(void* address) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* address</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>memory::malloc</h2>
+        <b>Signature:</b> <code>void* memory::malloc(size_t size) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>memory::realloc</h2>
+        <b>Signature:</b> <code>void* memory::realloc(void* ptr, size_t old_size, size_t size) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* ptr</code></li>
+          <li><code>size_t old_size</code></li>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>heap_segment_header_t::split</h2>
+        <b>Signature:</b> <code>heap_segment_header_t* heap_segment_header_t::split(size_t split_length) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>size_t split_length</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>heap_segment_header_t*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>memory::expand_heap</h2>
+        <b>Signature:</b> <code>void memory::expand_heap(size_t length) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>size_t length</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>heap_segment_header_t::combine_forward</h2>
+        <b>Signature:</b> <code>void heap_segment_header_t::combine_forward() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>heap_segment_header_t::combine_backward</h2>
+        <b>Signature:</b> <code>void heap_segment_header_t::combine_backward() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>new</h2>
+        <b>Signature:</b> <code>void* operator new(size_t size) </code><br/>
+        <b>Attributes:</b> <code>void*</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>operator</code>
+      </div>
+      <hr>
+      <div>
+        <h2>new[]</h2>
+        <b>Signature:</b> <code>void* operator new[](size_t size) </code><br/>
+        <b>Attributes:</b> <code>void*</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>operator</code>
+      </div>
+      <hr>
+      <div>
+        <h2>delete</h2>
+        <b>Signature:</b> <code>void operator delete(void* p, unsigned long) </code><br/>
+        <b>Attributes:</b> <code>void</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* p</code></li>
+          <li><code>unsigned long</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>operator</code>
+      </div>
+      <hr>
+      <div>
+        <h2>delete[]</h2>
+        <b>Signature:</b> <code>void operator delete[](void* p) </code><br/>
+        <b>Attributes:</b> <code>void</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* p</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>operator</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/memory/heap.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

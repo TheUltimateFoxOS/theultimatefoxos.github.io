@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>dhcp_protocol::dhcp_protocol</h2>
+        <b>Signature:</b> <code>dhcp_protocol::dhcp_protocol(udp_socket* socket) </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>udp_socket* socket</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>dhcp_protocol::~dhcp_protocol</h2>
+        <b>Signature:</b> <code>dhcp_protocol::~dhcp_protocol() </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>dhcp_protocol::request</h2>
+        <b>Signature:</b> <code>void dhcp_protocol::request() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>dhcp_protocol::request</h2>
+        <b>Signature:</b> <code>void dhcp_protocol::request(uint32_t ip) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint32_t ip</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>dhcp_protocol::on_udp_message</h2>
+        <b>Signature:</b> <code>void dhcp_protocol::on_udp_message(udp_socket *socket, uint8_t* data, size_t size) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>udp_socket *socket</code></li>
+          <li><code>uint8_t* data</code></li>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>dhcp_protocol::get_dhcp_options</h2>
+        <b>Signature:</b> <code>void* dhcp_protocol::get_dhcp_options(dhcp_packet_t* packet, uint8_t type) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>dhcp_packet_t* packet</code></li>
+          <li><code>uint8_t type</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>dhcp_protocol::make_dhcp_packet</h2>
+        <b>Signature:</b> <code>void dhcp_protocol::make_dhcp_packet(dhcp_packet_t* packet, uint8_t msg_type, uint32_t request_ip) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>dhcp_packet_t* packet</code></li>
+          <li><code>uint8_t msg_type</code></li>
+          <li><code>uint32_t request_ip</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/net/dhcp.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

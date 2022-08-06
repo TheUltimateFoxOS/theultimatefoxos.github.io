@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>get_vendor_name</h2>
+        <b>Signature:</b> <code>const char* get_vendor_name(uint16_t vendor_ID) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t vendor_ID</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>const char*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>get_device_name</h2>
+        <b>Signature:</b> <code>const char* get_device_name(uint16_t vendor_ID, uint16_t device_ID) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t vendor_ID</code></li>
+          <li><code>uint16_t device_ID</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>const char*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>mass_storage_controller_subclass_name</h2>
+        <b>Signature:</b> <code>const char* mass_storage_controller_subclass_name(uint8_t subclass_code) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint8_t subclass_code</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>const char*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>serial_bus_controller_subclass_name</h2>
+        <b>Signature:</b> <code>const char* serial_bus_controller_subclass_name(uint8_t subclass_code) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint8_t subclass_code</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>const char*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>bridge_device_subclass_name</h2>
+        <b>Signature:</b> <code>const char* bridge_device_subclass_name(uint8_t subclass_code) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint8_t subclass_code</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>const char*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>get_subclass_name</h2>
+        <b>Signature:</b> <code>const char* get_subclass_name(uint8_t class_code, uint8_t subclass_code) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint8_t class_code</code></li>
+          <li><code>uint8_t subclass_code</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>const char*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>get_prog_IF_name</h2>
+        <b>Signature:</b> <code>const char* get_prog_IF_name(uint8_t class_code, uint8_t subclass_code, uint8_t prog_IF) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint8_t class_code</code></li>
+          <li><code>uint8_t subclass_code</code></li>
+          <li><code>uint8_t prog_IF</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>const char*</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/pci/pci_descriptors.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

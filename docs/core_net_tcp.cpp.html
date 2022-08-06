@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>tcp_handler::tcp_handler</h2>
+        <b>Signature:</b> <code>tcp_handler::tcp_handler() </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_handler::~tcp_handler</h2>
+        <b>Signature:</b> <code>tcp_handler::~tcp_handler() </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_handler::on_tcp_message</h2>
+        <b>Signature:</b> <code>bool tcp_handler::on_tcp_message(tcp_socket* socket, uint8_t* data, size_t size) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tcp_socket* socket</code></li>
+          <li><code>uint8_t* data</code></li>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>bool</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_socket::tcp_socket</h2>
+        <b>Signature:</b> <code>tcp_socket::tcp_socket(tcp_provider* provider): acknowledged(1) </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tcp_provider* provider</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_socket::~tcp_socket</h2>
+        <b>Signature:</b> <code>tcp_socket::~tcp_socket() </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_socket::handle_tcp_message</h2>
+        <b>Signature:</b> <code>bool tcp_socket::handle_tcp_message(uint8_t* data, size_t size) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint8_t* data</code></li>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>bool</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_socket::send</h2>
+        <b>Signature:</b> <code>void tcp_socket::send(uint8_t* data, size_t size) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint8_t* data</code></li>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_socket::disconnect</h2>
+        <b>Signature:</b> <code>void tcp_socket::disconnect() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_provider::tcp_provider</h2>
+        <b>Signature:</b> <code>tcp_provider::tcp_provider(ipv4_provider *ipv4_provider): ipv4_handler(ipv4_provider, 0x06), binds(100) </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>ipv4_provider *ipv4_provider</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_provider::on_internet_protocol_received</h2>
+        <b>Signature:</b> <code>bool tcp_provider::on_internet_protocol_received(uint32_t srcIP_BE, uint32_t dstIP_BE, uint8_t* payload, uint32_t size) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint32_t srcIP_BE</code></li>
+          <li><code>uint32_t dstIP_BE</code></li>
+          <li><code>uint8_t* payload</code></li>
+          <li><code>uint32_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>bool</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_provider::connect</h2>
+        <b>Signature:</b> <code>tcp_socket* tcp_provider::connect(uint32_t ip, uint16_t port) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint32_t ip</code></li>
+          <li><code>uint16_t port</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>tcp_socket*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_provider::listen</h2>
+        <b>Signature:</b> <code>tcp_socket* tcp_provider::listen(uint16_t port) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t port</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>tcp_socket*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_provider::disconnect</h2>
+        <b>Signature:</b> <code>void tcp_provider::disconnect(tcp_socket* socket) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tcp_socket* socket</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_provider::send</h2>
+        <b>Signature:</b> <code>void tcp_provider::send(tcp_socket* socket, uint8_t* data, size_t size, uint16_t flags) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tcp_socket* socket</code></li>
+          <li><code>uint8_t* data</code></li>
+          <li><code>size_t size</code></li>
+          <li><code>uint16_t flags</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_provider::retransmit</h2>
+        <b>Signature:</b> <code>void tcp_provider::retransmit(tcp_socket* socket, uint8_t* packet, size_t size, list<net::tcp_sent_packet_t>::node* list_node) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tcp_socket* socket</code></li>
+          <li><code>uint8_t* packet</code></li>
+          <li><code>size_t size</code></li>
+          <li><code>list<net::tcp_sent_packet_t>::node* list_node</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tcp_provider::bind</h2>
+        <b>Signature:</b> <code>void tcp_provider::bind(tcp_socket* socket, tcp_handler* handler) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tcp_socket* socket</code></li>
+          <li><code>tcp_handler* handler</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/net/tcp.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

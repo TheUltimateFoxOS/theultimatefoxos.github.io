@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>elf_symbol_resolver::elf_symbol_resolver</h2>
+        <b>Signature:</b> <code>elf_symbol_resolver::elf_symbol_resolver(void* raw_elf_file) </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> Constructor for the elf symbol resolver class<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* raw_elf_file</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>elf_symbol_resolver::resolve</h2>
+        <b>Signature:</b> <code>void* elf_symbol_resolver::resolve(char* symbol_name) </code><br/>
+        <b>Description:</b> Resolves a symbol in an elf file<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* symbol_name</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>elf_symbol_resolver::resolve</h2>
+        <b>Signature:</b> <code>char* elf_symbol_resolver::resolve(void* symbol_addr) </code><br/>
+        <b>Description:</b> Resolves a symbol in an elf file<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* symbol_addr</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>char*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>elf::setup</h2>
+        <b>Signature:</b> <code>void elf::setup() </code><br/>
+        <b>Description:</b> Sets up the elf resolver system<br/>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>elf::resolve_symbol</h2>
+        <b>Signature:</b> <code>uint64_t elf::resolve_symbol(char* name) </code><br/>
+        <b>Description:</b> Resolves a symbol in the kernel and the loaded modules<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* name</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>uint64_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>elf::resolve_symbol</h2>
+        <b>Signature:</b> <code>char* elf::resolve_symbol(uint64_t address) </code><br/>
+        <b>Description:</b> Resolves a symbol in the kernel and the loaded modules<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint64_t address</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>char*</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/elf/elf_resolver.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

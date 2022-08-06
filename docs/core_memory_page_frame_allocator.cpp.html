@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>page_frame_allocator::read_EFI_memory_map</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::read_EFI_memory_map() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::init_bitmap</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::init_bitmap(size_t bitmapsize, void* buffer_address)</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>size_t bitmapsize</code></li>
+          <li><code>void* buffer_address</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::request_page_internal</h2>
+        <b>Signature:</b> <code>void* page_frame_allocator::request_page_internal(uint64_t start, uint64_t end) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint64_t start</code></li>
+          <li><code>uint64_t end</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::request_page</h2>
+        <b>Signature:</b> <code>void* page_frame_allocator::request_page() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::request_pages_internal</h2>
+        <b>Signature:</b> <code>void* page_frame_allocator::request_pages_internal(uint64_t start, uint64_t end, int amount) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint64_t start</code></li>
+          <li><code>uint64_t end</code></li>
+          <li><code>int amount</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::request_pages</h2>
+        <b>Signature:</b> <code>void* page_frame_allocator::request_pages(int amount) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>int amount</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::free_page</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::free_page(void* address) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* address</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::free_pages</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::free_pages(void* address, uint64_t page_count) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* address</code></li>
+          <li><code>uint64_t page_count</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::lock_page</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::lock_page(void* address) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* address</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::lock_pages</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::lock_pages(void* address, uint64_t page_count) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* address</code></li>
+          <li><code>uint64_t page_count</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::unreserve_page</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::unreserve_page(void* address) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* address</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::unreserve_pages</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::unreserve_pages(void* address, uint64_t page_count) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* address</code></li>
+          <li><code>uint64_t page_count</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::reserve_page</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::reserve_page(void* address) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* address</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::reserve_pages</h2>
+        <b>Signature:</b> <code>void page_frame_allocator::reserve_pages(void* address, uint64_t pageCount) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* address</code></li>
+          <li><code>uint64_t pageCount</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::get_free_RAM</h2>
+        <b>Signature:</b> <code>uint64_t page_frame_allocator::get_free_RAM() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>uint64_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::get_used_RAM</h2>
+        <b>Signature:</b> <code>uint64_t page_frame_allocator::get_used_RAM() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>uint64_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>page_frame_allocator::get_reserved_RAM</h2>
+        <b>Signature:</b> <code>uint64_t page_frame_allocator::get_reserved_RAM() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>uint64_t</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/memory/page_frame_allocator.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

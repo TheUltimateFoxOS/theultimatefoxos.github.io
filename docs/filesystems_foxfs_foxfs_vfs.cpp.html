@@ -1,0 +1,196 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>foxfs_mount::foxfs_mount</h2>
+        <b>Signature:</b> <code>foxfs_mount::foxfs_mount(int disk_id, char* name) </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>int disk_id</code></li>
+          <li><code>char* name</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::foxfs_mount</h2>
+        <b>Signature:</b> <code>foxfs_mount::foxfs_mount(char* name) </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* name</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::~foxfs_mount</h2>
+        <b>Signature:</b> <code>foxfs_mount::~foxfs_mount() </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::open</h2>
+        <b>Signature:</b> <code>file_t* foxfs_mount::open(char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>file_t*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::close</h2>
+        <b>Signature:</b> <code>void foxfs_mount::close(file_t* file) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>file_t* file</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::read</h2>
+        <b>Signature:</b> <code>void foxfs_mount::read(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>file_t* file</code></li>
+          <li><code>void* buffer</code></li>
+          <li><code>size_t size</code></li>
+          <li><code>size_t offset</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::write</h2>
+        <b>Signature:</b> <code>void foxfs_mount::write(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>file_t* file</code></li>
+          <li><code>void* buffer</code></li>
+          <li><code>size_t size</code></li>
+          <li><code>size_t offset</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::touch</h2>
+        <b>Signature:</b> <code>void foxfs_mount::touch(char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::mkdir</h2>
+        <b>Signature:</b> <code>void foxfs_mount::mkdir(char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::dir_at</h2>
+        <b>Signature:</b> <code>dir_t foxfs_mount::dir_at(int idx, char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>int idx</code></li>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>dir_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::delete_</h2>
+        <b>Signature:</b> <code>void foxfs_mount::delete_(file_t* file) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>file_t* file</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>foxfs_mount::delete_dir</h2>
+        <b>Signature:</b> <code>void foxfs_mount::delete_dir(char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/filesystems/foxfs/foxfs_vfs.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

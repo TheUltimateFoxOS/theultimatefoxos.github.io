@@ -1,0 +1,439 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>laihost_map</h2>
+        <b>Signature:</b> <code>void* laihost_map(size_t address, size_t count) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>size_t address</code></li>
+          <li><code>size_t count</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_unmap</h2>
+        <b>Signature:</b> <code>void laihost_unmap(void* pointer, size_t count) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* pointer</code></li>
+          <li><code>size_t count</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_log</h2>
+        <b>Signature:</b> <code>void laihost_log(int level, const char* msg) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>int level</code></li>
+          <li><code>const char* msg</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>__attribute__</h2>
+        <b>Signature:</b> <code>__attribute__((noreturn)) void laihost_panic(const char* msg) </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code> </code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_malloc</h2>
+        <b>Signature:</b> <code>void* laihost_malloc(size_t size) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_realloc</h2>
+        <b>Signature:</b> <code>void* laihost_realloc(void *oldptr, size_t newsize, size_t oldsize) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void *oldptr</code></li>
+          <li><code>size_t newsize</code></li>
+          <li><code>size_t oldsize</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_free</h2>
+        <b>Signature:</b> <code>void laihost_free(void *ptr, size_t size) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void *ptr</code></li>
+          <li><code>size_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_outb</h2>
+        <b>Signature:</b> <code>void laihost_outb(uint16_t port, uint8_t val) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t port</code></li>
+          <li><code>uint8_t val</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_outw</h2>
+        <b>Signature:</b> <code>void laihost_outw(uint16_t port, uint16_t val) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t port</code></li>
+          <li><code>uint16_t val</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_outd</h2>
+        <b>Signature:</b> <code>void laihost_outd(uint16_t port, uint32_t val) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t port</code></li>
+          <li><code>uint32_t val</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_inb</h2>
+        <b>Signature:</b> <code>uint8_t laihost_inb(uint16_t port) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t port</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>uint8_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_inw</h2>
+        <b>Signature:</b> <code>uint16_t laihost_inw(uint16_t port) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t port</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>uint16_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_ind</h2>
+        <b>Signature:</b> <code>uint32_t laihost_ind(uint16_t port) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t port</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>uint32_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_pci_writeb</h2>
+        <b>Signature:</b> <code>void laihost_pci_writeb(uint16_t seg, uint8_t bus, uint8_t slot, uint8_t fun, uint16_t offset, uint8_t val) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t seg</code></li>
+          <li><code>uint8_t bus</code></li>
+          <li><code>uint8_t slot</code></li>
+          <li><code>uint8_t fun</code></li>
+          <li><code>uint16_t offset</code></li>
+          <li><code>uint8_t val</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_pci_writew</h2>
+        <b>Signature:</b> <code>void laihost_pci_writew(uint16_t seg, uint8_t bus, uint8_t slot, uint8_t fun, uint16_t offset, uint16_t val) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t seg</code></li>
+          <li><code>uint8_t bus</code></li>
+          <li><code>uint8_t slot</code></li>
+          <li><code>uint8_t fun</code></li>
+          <li><code>uint16_t offset</code></li>
+          <li><code>uint16_t val</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_pci_writed</h2>
+        <b>Signature:</b> <code>void laihost_pci_writed(uint16_t seg, uint8_t bus, uint8_t slot, uint8_t fun, uint16_t offset, uint32_t val) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t seg</code></li>
+          <li><code>uint8_t bus</code></li>
+          <li><code>uint8_t slot</code></li>
+          <li><code>uint8_t fun</code></li>
+          <li><code>uint16_t offset</code></li>
+          <li><code>uint32_t val</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_pci_readb</h2>
+        <b>Signature:</b> <code>uint8_t laihost_pci_readb(uint16_t seg, uint8_t bus, uint8_t slot, uint8_t fun, uint16_t offset) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t seg</code></li>
+          <li><code>uint8_t bus</code></li>
+          <li><code>uint8_t slot</code></li>
+          <li><code>uint8_t fun</code></li>
+          <li><code>uint16_t offset</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>uint8_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_pci_readw</h2>
+        <b>Signature:</b> <code>uint16_t laihost_pci_readw(uint16_t seg, uint8_t bus, uint8_t slot, uint8_t fun, uint16_t offset) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t seg</code></li>
+          <li><code>uint8_t bus</code></li>
+          <li><code>uint8_t slot</code></li>
+          <li><code>uint8_t fun</code></li>
+          <li><code>uint16_t offset</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>uint16_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_pci_readd</h2>
+        <b>Signature:</b> <code>uint32_t laihost_pci_readd(uint16_t seg, uint8_t bus, uint8_t slot, uint8_t fun, uint16_t offset) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint16_t seg</code></li>
+          <li><code>uint8_t bus</code></li>
+          <li><code>uint8_t slot</code></li>
+          <li><code>uint8_t fun</code></li>
+          <li><code>uint16_t offset</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>uint32_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_sleep</h2>
+        <b>Signature:</b> <code>void laihost_sleep(uint64_t ms) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint64_t ms</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_timer</h2>
+        <b>Signature:</b> <code>uint64_t laihost_timer(void) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>uint64_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_handle_amldebug</h2>
+        <b>Signature:</b> <code>void laihost_handle_amldebug(lai_variable_t* var) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>lai_variable_t* var</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_sync_wait</h2>
+        <b>Signature:</b> <code>int laihost_sync_wait(struct lai_sync_state *sync, unsigned int val, int64_t timeout) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>struct lai_sync_state *sync</code></li>
+          <li><code>unsigned int val</code></li>
+          <li><code>int64_t timeout</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>int</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_sync_wake</h2>
+        <b>Signature:</b> <code>void laihost_sync_wake(struct lai_sync_state *sync) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>struct lai_sync_state *sync</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>laihost_scan</h2>
+        <b>Signature:</b> <code>void* laihost_scan(const char *sig, size_t index) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>const char *sig</code></li>
+          <li><code>size_t index</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>memcpy</h2>
+        <b>Signature:</b> <code>void* memcpy(void* dest, const void* src, size_t count) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* dest</code></li>
+          <li><code>const void* src</code></li>
+          <li><code>size_t count</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>memset</h2>
+        <b>Signature:</b> <code>void* memset(void* dest, int val, size_t count) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* dest</code></li>
+          <li><code>int val</code></li>
+          <li><code>size_t count</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>memcmp</h2>
+        <b>Signature:</b> <code>int memcmp(const void* dest, const void* src, size_t count) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>const void* dest</code></li>
+          <li><code>const void* src</code></li>
+          <li><code>size_t count</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>int</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/features/laihost/laihost.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

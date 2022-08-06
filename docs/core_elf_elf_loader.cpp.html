@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>elf::load_elf</h2>
+        <b>Signature:</b> <code>scheduler::task_t* elf::load_elf(char* filename, const char** argv, const char** envp) </code><br/>
+        <b>Description:</b> Loads an elf file<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* filename</code></li>
+          <li><code>const char** argv</code></li>
+          <li><code>const char** envp</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>scheduler::task_t*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>elf_apply_relocations</h2>
+        <b>Signature:</b> <code>void elf_apply_relocations(void* ptr, Elf64_Ehdr* header, uint64_t vaddr, uint64_t elf_load_offset, uint64_t size) </code><br/>
+        <b>Description:</b> Applies relocations to an elf file<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* ptr</code></li>
+          <li><code>Elf64_Ehdr* header</code></li>
+          <li><code>uint64_t vaddr</code></li>
+          <li><code>uint64_t elf_load_offset</code></li>
+          <li><code>uint64_t size</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>elf::load_elf</h2>
+        <b>Signature:</b> <code>scheduler::task_t* elf::load_elf(void* ptr, const char** argv, const char** envp) </code><br/>
+        <b>Description:</b> Loads an elf file<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* ptr</code></li>
+          <li><code>const char** argv</code></li>
+          <li><code>const char** envp</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>scheduler::task_t*</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/elf/elf_loader.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

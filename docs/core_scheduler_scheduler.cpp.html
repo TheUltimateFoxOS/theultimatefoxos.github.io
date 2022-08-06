@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>scheduler_interrupt</h2>
+        <b>Signature:</b> <code>void scheduler_interrupt(interrupts::s_registers* registers) </code><br/>
+        <b>Description:</b> Handles the timer interrupt for the scheduler<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>interrupts::s_registers* registers</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::setup</h2>
+        <b>Signature:</b> <code>void scheduler::setup() </code><br/>
+        <b>Description:</b> Sets up the scheduler<br/>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::start</h2>
+        <b>Signature:</b> <code>void scheduler::start() </code><br/>
+        <b>Description:</b> Starts the scheduler<br/>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::kill_self</h2>
+        <b>Signature:</b> <code>void scheduler::kill_self() </code><br/>
+        <b>Description:</b> Kills the current task<br/>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::create_task</h2>
+        <b>Signature:</b> <code>task_t* scheduler::create_task(void* entry) </code><br/>
+        <b>Description:</b> Creates a new task<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* entry</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>task_t*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::handle_signal</h2>
+        <b>Signature:</b> <code>bool scheduler::handle_signal(int signum) </code><br/>
+        <b>Description:</b> Sends an signal to the current task<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>int signum</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>bool</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::handle_signal_all_tasks</h2>
+        <b>Signature:</b> <code>void scheduler::handle_signal_all_tasks(int signum) </code><br/>
+        <b>Description:</b> Sends an signal to all tasks<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>int signum</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::register_signal_handler_self</h2>
+        <b>Signature:</b> <code>void scheduler::register_signal_handler_self(int signum, uint64_t handler) </code><br/>
+        <b>Description:</b> Registers a signal handler for the current process<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>int signum</code></li>
+          <li><code>uint64_t handler</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::set_cwd_self</h2>
+        <b>Signature:</b> <code>void scheduler::set_cwd_self(const char* cwd) </code><br/>
+        <b>Description:</b> Sets the current working directory of the current process<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>const char* cwd</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::read_running_tasks</h2>
+        <b>Signature:</b> <code>void scheduler::read_running_tasks(task_t** tasks, int max_tasks) </code><br/>
+        <b>Description:</b> Get a list of all running tasks<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>task_t** tasks</code></li>
+          <li><code>int max_tasks</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>scheduler::get_cwd_self</h2>
+        <b>Signature:</b> <code>const char* scheduler::get_cwd_self() </code><br/>
+        <b>Description:</b> Gets the current working directory of the current process<br/>
+        <br/>
+        <b>Return:</b> <code>const char*</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/scheduler/scheduler.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

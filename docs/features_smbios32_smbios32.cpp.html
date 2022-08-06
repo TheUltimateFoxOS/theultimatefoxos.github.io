@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="https://theultimatefoxos.dev/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://theultimatefoxos.dev/main.js" defer></script>
+    <title>FoxOS - Docs</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+      <a href="/">Home</a>
+      <a href="/about/">About us</a>
+      <a href="/FoxOS-kernel/">Docs</a>
+      <a href="/modules/">Kernel modules</a>
+      <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+      <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+    <header class="fox-header" style="padding:50px 16px">
+      <h1 class="fox-header-title">FoxOS</h1>
+      <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+    </header>
+    
+    <div class="fox-text">
+      <div>
+        <h2>smbios32::print_smbios_entry</h2>
+        <b>Signature:</b> <code>void smbios32::print_smbios_entry(smbios_entry_t* smbios) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>smbios_entry_t* smbios</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>smbios32::next</h2>
+        <b>Signature:</b> <code>smbios_structure_header_t* smbios32::next(smbios_structure_header_t* structure) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>smbios_structure_header_t* structure</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>smbios_structure_header_t*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>smbios32::find_smbios_structure</h2>
+        <b>Signature:</b> <code>smbios_structure_header_t* smbios32::find_smbios_structure(smbios_entry_t* smbios, uint8_t type, int idx) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>smbios_entry_t* smbios</code></li>
+          <li><code>uint8_t type</code></li>
+          <li><code>int idx</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>smbios_structure_header_t*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>smbios32::get_string</h2>
+        <b>Signature:</b> <code>char* smbios32::get_string(smbios_structure_header_t* structure, str_id id) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>smbios_structure_header_t* structure</code></li>
+          <li><code>str_id id</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>char*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>smbios32::type_to_str</h2>
+        <b>Signature:</b> <code>char* smbios32::type_to_str(uint8_t type) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>uint8_t type</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>char*</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/features/smbios32/smbios32.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>
