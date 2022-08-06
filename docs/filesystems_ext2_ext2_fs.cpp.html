@@ -36,7 +36,7 @@
       <div>
         <h2>clear_buffer</h2>
         <b>Signature:</b> <code>void clear_buffer(ext2_fs_t* fs) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Clears a buffer<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -49,7 +49,7 @@
       <div>
         <h2>fs::read_disk_block</h2>
         <b>Signature:</b> <code>void fs::read_disk_block(ext2_fs_t* fs, uint32_t block, uint8_t* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads a block from the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -64,7 +64,7 @@
       <div>
         <h2>fs::write_disk_block</h2>
         <b>Signature:</b> <code>void fs::write_disk_block(ext2_fs_t* fs, uint32_t block, uint8_t* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes a block to the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -79,7 +79,7 @@
       <div>
         <h2>fs::read_disk_blocks</h2>
         <b>Signature:</b> <code>void fs::read_disk_blocks(ext2_fs_t* fs, uint32_t block, uint32_t count, uint8_t* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads blocks from the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -95,7 +95,7 @@
       <div>
         <h2>fs::write_disk_blocks</h2>
         <b>Signature:</b> <code>void fs::write_disk_blocks(ext2_fs_t* fs, uint32_t block, uint32_t count, uint8_t* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes blocks to the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -111,7 +111,7 @@
       <div>
         <h2>fs::read_inode</h2>
         <b>Signature:</b> <code>void fs::read_inode(ext2_fs_t* fs, uint32_t inode_idx, ext2_inode_t* inode) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads an inode from the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -126,7 +126,7 @@
       <div>
         <h2>fs::write_inode</h2>
         <b>Signature:</b> <code>void fs::write_inode(ext2_fs_t* fs, uint32_t inode_idx, ext2_inode_t* inode) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes an inode to the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -141,7 +141,7 @@
       <div>
         <h2>fs::readdir</h2>
         <b>Signature:</b> <code>void fs::readdir(ext2_fs_t* fs, int idx, ext2_inode_t* inode, ext2_dir_t* child_dir) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads a directory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -157,7 +157,7 @@
       <div>
         <h2>fs::path_to_inode</h2>
         <b>Signature:</b> <code>void fs::path_to_inode(ext2_fs_t* fs, char* path, ext2_inode_t* inode) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Converts a path to an inode<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

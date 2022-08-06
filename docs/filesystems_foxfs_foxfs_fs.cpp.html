@@ -36,7 +36,7 @@
       <div>
         <h2>fs::read_disk_block</h2>
         <b>Signature:</b> <code>int fs::read_disk_block(foxfs_fs_t* fs, uint32_t block, uint8_t* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads a block from the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -51,7 +51,7 @@
       <div>
         <h2>fs::write_disk_block</h2>
         <b>Signature:</b> <code>int fs::write_disk_block(foxfs_fs_t* fs, uint32_t block, uint8_t* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes a block to the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -66,7 +66,7 @@
       <div>
         <h2>fs::create_data_block</h2>
         <b>Signature:</b> <code>uint64_t fs::create_data_block(foxfs_fs_t* fs) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Creates a data block<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -79,7 +79,7 @@
       <div>
         <h2>fs::read_dirent_data</h2>
         <b>Signature:</b> <code>int fs::read_dirent_data(foxfs_fs_t* fs, uint64_t data_address, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads directory entry data<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -96,7 +96,7 @@
       <div>
         <h2>fs::update_dirent_read</h2>
         <b>Signature:</b> <code>int fs::update_dirent_read(foxfs_fs_t* fs, foxfs_dirent_t* dirent) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Updates a directory entry<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -110,7 +110,7 @@
       <div>
         <h2>fs::read_dirent</h2>
         <b>Signature:</b> <code>int fs::read_dirent(foxfs_fs_t* fs, foxfs_dirent_t* dirent, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads a directory entry<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -127,7 +127,7 @@
       <div>
         <h2>fs::write_dirent_data</h2>
         <b>Signature:</b> <code>int fs::write_dirent_data(foxfs_fs_t* fs, uint64_t data_address, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes directory entry data<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -144,7 +144,7 @@
       <div>
         <h2>fs::update_dirent_write</h2>
         <b>Signature:</b> <code>int fs::update_dirent_write(foxfs_fs_t* fs, foxfs_dirent_t* dirent) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Updates a directory entry<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -158,7 +158,7 @@
       <div>
         <h2>fs::write_dirent</h2>
         <b>Signature:</b> <code>int fs::write_dirent(foxfs_fs_t* fs, foxfs_dirent_t* dirent, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes a directory entry<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -175,7 +175,7 @@
       <div>
         <h2>fs::readdir</h2>
         <b>Signature:</b> <code>int fs::readdir(foxfs_fs_t* fs, foxfs_dirent_t* dirent, int idx, foxfs_dirent_t* child_dir) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads a directory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -191,7 +191,7 @@
       <div>
         <h2>segment_path</h2>
         <b>Signature:</b> <code>int segment_path(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Splits a path into segments<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -204,7 +204,7 @@
       <div>
         <h2>fs::path_to_dirent</h2>
         <b>Signature:</b> <code>int fs::path_to_dirent(foxfs_fs_t* fs, char* path, foxfs_dirent_t* dirent) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Converts a path to a dirent<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -219,7 +219,7 @@
       <div>
         <h2>fs::create_dirent</h2>
         <b>Signature:</b> <code>int fs::create_dirent(foxfs_fs_t* fs, char* path, uint8_t file_type) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Creates a dirent<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

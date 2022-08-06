@@ -37,7 +37,7 @@
         <h2>foxfs_mount::foxfs_mount</h2>
         <b>Signature:</b> <code>foxfs_mount::foxfs_mount(int disk_id, char* name) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the foxfs mount class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -52,7 +52,7 @@
         <h2>foxfs_mount::foxfs_mount</h2>
         <b>Signature:</b> <code>foxfs_mount::foxfs_mount(char* name) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the foxfs mount class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -66,7 +66,7 @@
         <h2>foxfs_mount::~foxfs_mount</h2>
         <b>Signature:</b> <code>foxfs_mount::~foxfs_mount() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the foxfs mount class<br/>
         <br/>
         <b>Return:</b> <code> </code>
       </div>
@@ -74,7 +74,7 @@
       <div>
         <h2>foxfs_mount::open</h2>
         <b>Signature:</b> <code>file_t* foxfs_mount::open(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Opens a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -87,7 +87,7 @@
       <div>
         <h2>foxfs_mount::close</h2>
         <b>Signature:</b> <code>void foxfs_mount::close(file_t* file) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Closes a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -100,7 +100,7 @@
       <div>
         <h2>foxfs_mount::read</h2>
         <b>Signature:</b> <code>void foxfs_mount::read(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads from a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -116,7 +116,7 @@
       <div>
         <h2>foxfs_mount::write</h2>
         <b>Signature:</b> <code>void foxfs_mount::write(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes to a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -132,7 +132,7 @@
       <div>
         <h2>foxfs_mount::touch</h2>
         <b>Signature:</b> <code>void foxfs_mount::touch(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Creates a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -145,7 +145,7 @@
       <div>
         <h2>foxfs_mount::mkdir</h2>
         <b>Signature:</b> <code>void foxfs_mount::mkdir(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Creates a directory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -158,7 +158,7 @@
       <div>
         <h2>foxfs_mount::dir_at</h2>
         <b>Signature:</b> <code>dir_t foxfs_mount::dir_at(int idx, char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the directory at a certain index<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -172,7 +172,7 @@
       <div>
         <h2>foxfs_mount::delete_</h2>
         <b>Signature:</b> <code>void foxfs_mount::delete_(file_t* file) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Deletes a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -185,7 +185,7 @@
       <div>
         <h2>foxfs_mount::delete_dir</h2>
         <b>Signature:</b> <code>void foxfs_mount::delete_dir(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Deletes a directory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
