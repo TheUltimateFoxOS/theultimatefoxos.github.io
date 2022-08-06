@@ -700,17 +700,6 @@
 					]
 				},
 				{
-					"next": [
-						{
-							"folder_name": "test",
-							"files": [
-								{
-									"html_name": "core_timer_test_test.cpp.html",
-									"file_name": "test.cpp"
-								}
-							]
-						}
-					],
 					"folder_name": "timer",
 					"files": [
 						{
