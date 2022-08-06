@@ -16,6 +16,15 @@ jobs:
     - uses: actions/setup-node@v2
       with:
         node-version: '14'
+    - name: Setup Deno
+      # uses: denoland/setup-deno@v1
+      uses: denoland/setup-deno@004814556e37c54a2f6e31384c9e18e983317366
+      with:
+        deno-version: v1.x
+    - name: Clone horizon
+      run: git clone https://github.com/TheUltimateFoxOS/horizon.git --branch "bring-back-the-docs"
+    - name: Build horizon docs
+      run: cd horizon; deno run -A tools/doc/main.ts; cp -rv docs ../src/docs
     - name: Build files
       run: node build.js
     - name: Deploy
