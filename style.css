@@ -114,8 +114,11 @@ hr {border: 0px; border-top: 1px solid #eeeeee; margin: 20px 0;}
   text-decoration: none !important;
 }
 .fox-ul {
-  list-style-type: none;
-  padding: 0px;
+  padding: 0 0 0 20px;
+  margin: 0px;
+}
+.fox-ul:first-child {
+  padding: 0 0 0 0;
   margin: 0px;
 }
 .fox-ul li {
@@ -126,12 +129,12 @@ hr {border: 0px; border-top: 1px solid #eeeeee; margin: 20px 0;}
   padding: 0px !important;
   border-bottom: none;
 }
-.fox-ul li:hover {
+.fox-ul a:hover {
   background-color:#ccc
 }
 .fox-ul li a {
   padding: 8px 16px;
-  width: 100%;
+  width: calc(100% - 32px);
   display: block;
 }
 
