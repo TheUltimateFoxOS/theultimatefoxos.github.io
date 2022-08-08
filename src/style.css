@@ -116,6 +116,7 @@ hr {border: 0px; border-top: 1px solid #eeeeee; margin: 20px 0;}
 .fox-ul {
   padding: 0 0 0 20px;
   margin: 0px;
+  list-style-type: square;
 }
 .fox-ul:first-child {
   padding: 0 0 0 0;
