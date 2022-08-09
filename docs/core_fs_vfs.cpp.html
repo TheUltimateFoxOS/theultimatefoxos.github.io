@@ -37,13 +37,13 @@
         <h2>vfs_manager::vfs_manager</h2>
         <b>Signature:</b> <code>vfs_manager::vfs_manager() : mounts(10) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the vfs manager class<br/>
       </div>
       <hr>
       <div>
         <h2>vfs_manager::open</h2>
         <b>Signature:</b> <code>file_t* vfs_manager::open(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Opens a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -56,7 +56,7 @@
       <div>
         <h2>vfs_manager::close</h2>
         <b>Signature:</b> <code>void vfs_manager::close(file_t* file) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Closes a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -69,7 +69,7 @@
       <div>
         <h2>vfs_manager::read</h2>
         <b>Signature:</b> <code>void vfs_manager::read(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads from a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -85,7 +85,7 @@
       <div>
         <h2>vfs_manager::write</h2>
         <b>Signature:</b> <code>void vfs_manager::write(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes to a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -101,7 +101,7 @@
       <div>
         <h2>vfs_manager::delete_</h2>
         <b>Signature:</b> <code>void vfs_manager::delete_(file_t* file) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Deletes a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -114,7 +114,7 @@
       <div>
         <h2>vfs_manager::mkdir</h2>
         <b>Signature:</b> <code>void vfs_manager::mkdir(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Creates a directory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -127,7 +127,7 @@
       <div>
         <h2>vfs_manager::dir_at</h2>
         <b>Signature:</b> <code>dir_t vfs_manager::dir_at(int idx, char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the directory at a path<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -141,7 +141,7 @@
       <div>
         <h2>vfs_manager::touch</h2>
         <b>Signature:</b> <code>void vfs_manager::touch(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Creates a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -154,7 +154,7 @@
       <div>
         <h2>vfs_manager::delete_dir</h2>
         <b>Signature:</b> <code>void vfs_manager::delete_dir(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Deletes a directory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -167,7 +167,7 @@
       <div>
         <h2>vfs_manager::register_mount</h2>
         <b>Signature:</b> <code>void vfs_manager::register_mount(char* device, vfs_mount* vfs_mount_point) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Registers a mount point<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -181,7 +181,7 @@
       <div>
         <h2>vfs_manager::unregister_mount</h2>
         <b>Signature:</b> <code>void vfs_manager::unregister_mount(char* device) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Unregisters a mount point<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -194,7 +194,7 @@
       <div>
         <h2>vfs_manager::fs_at</h2>
         <b>Signature:</b> <code>bool vfs_manager::fs_at(int idx, char* out) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the filesystem at a index<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -208,7 +208,7 @@
       <div>
         <h2>vfs_mount::open</h2>
         <b>Signature:</b> <code>file_t* vfs_mount::open(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Opens a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -221,7 +221,7 @@
       <div>
         <h2>vfs_mount::close</h2>
         <b>Signature:</b> <code>void vfs_mount::close(file_t* file) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Closes a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -234,7 +234,7 @@
       <div>
         <h2>vfs_mount::read</h2>
         <b>Signature:</b> <code>void vfs_mount::read(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads from a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -250,7 +250,7 @@
       <div>
         <h2>vfs_mount::write</h2>
         <b>Signature:</b> <code>void vfs_mount::write(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes to a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -266,7 +266,7 @@
       <div>
         <h2>vfs_mount::delete_</h2>
         <b>Signature:</b> <code>void vfs_mount::delete_(file_t* file) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Deletes a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -279,7 +279,7 @@
       <div>
         <h2>vfs_mount::mkdir</h2>
         <b>Signature:</b> <code>void vfs_mount::mkdir(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Creates a directory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -292,7 +292,7 @@
       <div>
         <h2>vfs_mount::dir_at</h2>
         <b>Signature:</b> <code>dir_t vfs_mount::dir_at(int idx, char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the directory at a path<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -306,7 +306,7 @@
       <div>
         <h2>vfs_mount::touch</h2>
         <b>Signature:</b> <code>void vfs_mount::touch(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Creates a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -319,7 +319,7 @@
       <div>
         <h2>vfs_mount::delete_dir</h2>
         <b>Signature:</b> <code>void vfs_mount::delete_dir(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Deletes a directory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -332,7 +332,7 @@
       <div>
         <h2>fs::vfs::setup</h2>
         <b>Signature:</b> <code>void fs::vfs::setup() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sets up the vfs<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>

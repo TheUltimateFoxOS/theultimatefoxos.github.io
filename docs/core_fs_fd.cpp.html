@@ -37,7 +37,7 @@
         <h2>file_descriptor::file_descriptor</h2>
         <b>Signature:</b> <code>file_descriptor::file_descriptor(int fd) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the file descriptor class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -49,13 +49,13 @@
         <h2>file_descriptor::~file_descriptor</h2>
         <b>Signature:</b> <code>file_descriptor::~file_descriptor() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the file descriptor class<br/>
       </div>
       <hr>
       <div>
         <h2>file_descriptor::close</h2>
         <b>Signature:</b> <code>void file_descriptor::close() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Closes a file<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -63,7 +63,7 @@
       <div>
         <h2>file_descriptor::open</h2>
         <b>Signature:</b> <code>void file_descriptor::open(char* path) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Opens a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -76,7 +76,7 @@
       <div>
         <h2>file_descriptor::read</h2>
         <b>Signature:</b> <code>void file_descriptor::read(void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads from a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -91,7 +91,7 @@
       <div>
         <h2>file_descriptor::write</h2>
         <b>Signature:</b> <code>void file_descriptor::write(void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes to a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -106,7 +106,7 @@
       <div>
         <h2>file_descriptor::delete_</h2>
         <b>Signature:</b> <code>void file_descriptor::delete_() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Deletes a file<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -115,13 +115,13 @@
         <h2>file_descriptor_manager::file_descriptor_manager</h2>
         <b>Signature:</b> <code>file_descriptor_manager::file_descriptor_manager() : fds(10) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the file descriptor manager class<br/>
       </div>
       <hr>
       <div>
         <h2>file_descriptor_manager::alloc_fd</h2>
         <b>Signature:</b> <code>int file_descriptor_manager::alloc_fd() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Allocates a file descriptor<br/>
         <br/>
         <b>Return:</b> <code>int</code>
       </div>
@@ -129,7 +129,7 @@
       <div>
         <h2>file_descriptor_manager::free_fd</h2>
         <b>Signature:</b> <code>void file_descriptor_manager::free_fd(int fd) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Frees a file descriptor<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -142,7 +142,7 @@
       <div>
         <h2>file_descriptor_manager::register_fd</h2>
         <b>Signature:</b> <code>void file_descriptor_manager::register_fd(file_descriptor* fd_obj) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Registers a file descriptor<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -155,7 +155,7 @@
       <div>
         <h2>file_descriptor_manager::get_fd</h2>
         <b>Signature:</b> <code>file_descriptor* file_descriptor_manager::get_fd(int fd) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets a file descriptor<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
