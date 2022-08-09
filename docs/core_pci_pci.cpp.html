@@ -36,7 +36,7 @@
       <div>
         <h2>enumerate_function</h2>
         <b>Signature:</b> <code>void enumerate_function(uint64_t address, uint64_t function, uint16_t bus, uint16_t device) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Enumerates a PCI function<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -52,7 +52,7 @@
       <div>
         <h2>enumerate_device</h2>
         <b>Signature:</b> <code>void enumerate_device(uint64_t bus_address, uint64_t device, uint16_t bus) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Enumerates a PCI device<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -67,7 +67,7 @@
       <div>
         <h2>enumerate_bus</h2>
         <b>Signature:</b> <code>void enumerate_bus(uint64_t base_address, uint64_t bus) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Enumerates the PCI bus<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -81,7 +81,7 @@
       <div>
         <h2>enumerate_mcfg</h2>
         <b>Signature:</b> <code>void enumerate_mcfg(acpi::mcfg_header_t* mcfg) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Enumerates the PCI bus using the MCFG table<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -94,7 +94,7 @@
       <div>
         <h2>enumerate_legacy</h2>
         <b>Signature:</b> <code>void enumerate_legacy() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Enumerates the PCI bus using the legacy method<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -102,7 +102,7 @@
       <div>
         <h2>pci::enumerate_pci</h2>
         <b>Signature:</b> <code>void pci::enumerate_pci() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Enumerates the PCI bus either using the MCFG table or the legacy method<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>

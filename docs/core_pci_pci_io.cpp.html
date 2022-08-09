@@ -36,7 +36,7 @@
       <div>
         <h2>pci::pci_readd</h2>
         <b>Signature:</b> <code>uint32_t pci::pci_readd(uint16_t bus, uint16_t device, uint16_t function, uint32_t registeroffset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads a dword from a PCI register<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -52,7 +52,7 @@
       <div>
         <h2>pci::pci_writed</h2>
         <b>Signature:</b> <code>void pci::pci_writed(uint16_t bus, uint16_t device, uint16_t function, uint32_t registeroffset, uint32_t value) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes a dword to a PCI register<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -69,7 +69,7 @@
       <div>
         <h2>pci::pci_writeb</h2>
         <b>Signature:</b> <code>void pci::pci_writeb(uint16_t bus, uint16_t device, uint16_t function, uint32_t registeroffset, uint8_t value) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes a byte to a PCI register<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -86,7 +86,7 @@
       <div>
         <h2>pci::pci_readb</h2>
         <b>Signature:</b> <code>uint8_t pci::pci_readb(uint16_t bus, uint16_t device, uint16_t function, uint32_t registeroffset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads a byte from a PCI register<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -102,7 +102,7 @@
       <div>
         <h2>pci::pci_writew</h2>
         <b>Signature:</b> <code>void pci::pci_writew(uint16_t bus, uint16_t device, uint16_t function, uint32_t registeroffset, uint16_t value) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes a word to a PCI register<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -119,7 +119,7 @@
       <div>
         <h2>pci::pci_readw</h2>
         <b>Signature:</b> <code>uint16_t pci::pci_readw(uint16_t bus, uint16_t device, uint16_t function, uint32_t registeroffset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads a word from a PCI register<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -135,7 +135,7 @@
       <div>
         <h2>pci::device_has_functions</h2>
         <b>Signature:</b> <code>int pci::device_has_functions(uint16_t bus, uint16_t device) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Checks if a PCI device has functions<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -149,7 +149,7 @@
       <div>
         <h2>pci::get_device_header</h2>
         <b>Signature:</b> <code>pci::pci_header_0_t pci::get_device_header(uint16_t bus, uint16_t device, uint16_t function) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the device header of a PCI device using the legacy method<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -164,7 +164,7 @@
       <div>
         <h2>pci::enable_mmio</h2>
         <b>Signature:</b> <code>void pci::enable_mmio(uint16_t bus, uint16_t device, uint16_t function) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Enables MMIO on a PCI device<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -179,7 +179,7 @@
       <div>
         <h2>pci::become_bus_master</h2>
         <b>Signature:</b> <code>void pci::become_bus_master(uint16_t bus, uint16_t device, uint16_t function) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Makes a PCI device a bus master<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
