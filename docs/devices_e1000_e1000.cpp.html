@@ -37,13 +37,13 @@
         <h2>e1000_driver::~e1000_driver</h2>
         <b>Signature:</b> <code>e1000_driver::~e1000_driver() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the e1000 driver class<br/>
       </div>
       <hr>
       <div>
         <h2>e1000_driver::write_command</h2>
         <b>Signature:</b> <code>void e1000_driver::write_command(uint16_t address, uint32_t value) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes a command to the e1000<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -57,7 +57,7 @@
       <div>
         <h2>e1000_driver::read_command</h2>
         <b>Signature:</b> <code>uint32_t e1000_driver::read_command(uint16_t address) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads a command from the e1000<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -70,7 +70,7 @@
       <div>
         <h2>e1000_driver::detect_eeprom</h2>
         <b>Signature:</b> <code>bool e1000_driver::detect_eeprom() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Detects the eeprom of the e1000<br/>
         <br/>
         <b>Return:</b> <code>bool</code>
       </div>
@@ -78,7 +78,7 @@
       <div>
         <h2>e1000_driver::read_eeprom</h2>
         <b>Signature:</b> <code>uint32_t e1000_driver::read_eeprom(uint8_t addr) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads from the eeprom of the e1000<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -91,7 +91,7 @@
       <div>
         <h2>e1000_driver::read_mac_address</h2>
         <b>Signature:</b> <code>void e1000_driver::read_mac_address() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads the mac address from the e1000<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -99,7 +99,7 @@
       <div>
         <h2>e1000_driver::rx_init</h2>
         <b>Signature:</b> <code>void e1000_driver::rx_init() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Initializes the receive buffer<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -107,7 +107,7 @@
       <div>
         <h2>e1000_driver::tx_init</h2>
         <b>Signature:</b> <code>void e1000_driver::tx_init() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Initializes the transmit buffer<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -115,7 +115,7 @@
       <div>
         <h2>e1000_driver::start_link</h2>
         <b>Signature:</b> <code>void e1000_driver::start_link() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Starts the link<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -123,7 +123,7 @@
       <div>
         <h2>e1000_driver::activate</h2>
         <b>Signature:</b> <code>void e1000_driver::activate() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Activates the e1000 driver<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -131,7 +131,7 @@
       <div>
         <h2>e1000_driver::receive</h2>
         <b>Signature:</b> <code>void e1000_driver::receive() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Receives a packet<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -139,7 +139,7 @@
       <div>
         <h2>e1000_driver::send</h2>
         <b>Signature:</b> <code>void e1000_driver::send(uint8_t* data, int32_t length) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends a packet<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -153,7 +153,7 @@
       <div>
         <h2>e1000_driver::handle</h2>
         <b>Signature:</b> <code>void e1000_driver::handle() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> interrupt handler for the e1000 driver<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -161,7 +161,7 @@
       <div>
         <h2>e1000_driver::get_name</h2>
         <b>Signature:</b> <code>char* e1000_driver::get_name() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the name of the e1000 driver<br/>
         <br/>
         <b>Return:</b> <code>char*</code>
       </div>
@@ -169,7 +169,7 @@
       <div>
         <h2>e1000_driver::get_mac</h2>
         <b>Signature:</b> <code>uint64_t e1000_driver::get_mac() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the mac of the e1000 driver<br/>
         <br/>
         <b>Return:</b> <code>uint64_t</code>
       </div>
@@ -177,7 +177,7 @@
       <div>
         <h2>e1000_driver::get_ip</h2>
         <b>Signature:</b> <code>uint32_t e1000_driver::get_ip() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the ip of the e1000 driver<br/>
         <br/>
         <b>Return:</b> <code>uint32_t</code>
       </div>
@@ -185,7 +185,7 @@
       <div>
         <h2>e1000_driver::set_ip</h2>
         <b>Signature:</b> <code>void e1000_driver::set_ip(uint32_t ip) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sets the ip of the e1000 driver<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

@@ -37,13 +37,13 @@
         <h2>ps2_mouse::ps2_mouse</h2>
         <b>Signature:</b> <code>ps2_mouse::ps2_mouse() : dataport(0x60), commandport(0x64), interrupts::interrupt_handler(0x2C) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the ps2 mouse driver class<br/>
       </div>
       <hr>
       <div>
         <h2>ps2_mouse::activate</h2>
         <b>Signature:</b> <code>void ps2_mouse::activate() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Activates the ps2 mouse driver<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -51,7 +51,7 @@
       <div>
         <h2>ps2_mouse::is_presend</h2>
         <b>Signature:</b> <code>bool ps2_mouse::is_presend() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Checks if the ps2 mouse is presend<br/>
         <br/>
         <b>Return:</b> <code>bool</code>
       </div>
@@ -59,7 +59,7 @@
       <div>
         <h2>ps2_mouse::get_name</h2>
         <b>Signature:</b> <code>char* ps2_mouse::get_name() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the name of the ps2 mouse driver<br/>
         <br/>
         <b>Return:</b> <code>char*</code>
       </div>
@@ -67,7 +67,7 @@
       <div>
         <h2>ps2_mouse::handle</h2>
         <b>Signature:</b> <code>void ps2_mouse::handle() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> interrupt handler for the ps2 mouse driver<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -75,7 +75,7 @@
       <div>
         <h2>ps2_mouse::mouse_wait</h2>
         <b>Signature:</b> <code>void ps2_mouse::mouse_wait() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Waits for the mouse to be ready<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -83,7 +83,7 @@
       <div>
         <h2>ps2_mouse::mouse_wait_input</h2>
         <b>Signature:</b> <code>void ps2_mouse::mouse_wait_input() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Waits for the mouse to be ready for input<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -91,7 +91,7 @@
       <div>
         <h2>ps2_mouse::mouse_write</h2>
         <b>Signature:</b> <code>void ps2_mouse::mouse_write(unsigned char a_write) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes to the mouse<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -104,7 +104,7 @@
       <div>
         <h2>ps2_mouse::mouse_read</h2>
         <b>Signature:</b> <code>unsigned char ps2_mouse::mouse_read() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads from mouse<br/>
         <br/>
         <b>Return:</b> <code>unsigned char</code>
       </div>

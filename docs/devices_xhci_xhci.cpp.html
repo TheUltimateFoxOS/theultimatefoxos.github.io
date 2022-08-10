@@ -36,7 +36,7 @@
       <div>
         <h2>xhci_timeout</h2>
         <b>Signature:</b> <code>bool xhci_timeout(uint64_t ms, F f) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Function to call a function with a timeout<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -51,7 +51,7 @@
         <h2>xhci_driver::xhci_driver</h2>
         <b>Signature:</b> <code>xhci_driver::xhci_driver(pci::pci_header_0_t* header, uint16_t bus, uint16_t device, uint16_t function) : interrupt_handler(header->interrupt_line + 0x20), protocols(10) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the xhci driver class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -65,7 +65,7 @@
       <div>
         <h2>xhci_driver::handle</h2>
         <b>Signature:</b> <code>void xhci_driver::handle() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> interrupt handler for the xhci driver<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -73,7 +73,7 @@
       <div>
         <h2>xhci_driver::activate</h2>
         <b>Signature:</b> <code>void xhci_driver::activate() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Activates the xhci driver<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -81,7 +81,7 @@
       <div>
         <h2>xhci_driver::get_name</h2>
         <b>Signature:</b> <code>char* xhci_driver::get_name() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the name of the xhci driver<br/>
         <br/>
         <b>Return:</b> <code>char*</code>
       </div>
@@ -89,7 +89,7 @@
       <div>
         <h2>xhci_driver::intel_enable_ports</h2>
         <b>Signature:</b> <code>void xhci_driver::intel_enable_ports() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Enables the ports<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -97,7 +97,7 @@
       <div>
         <h2>xhci_driver::reset_controller</h2>
         <b>Signature:</b> <code>void xhci_driver::reset_controller() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Resets the controller<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>

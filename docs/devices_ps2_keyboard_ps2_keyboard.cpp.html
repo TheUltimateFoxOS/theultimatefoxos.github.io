@@ -37,13 +37,13 @@
         <h2>ps2_keyboard::ps2_keyboard</h2>
         <b>Signature:</b> <code>ps2_keyboard::ps2_keyboard() : interrupts::interrupt_handler(0x21), dataport(0x60), commandport(0x64) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the ps2 keyboard driver class<br/>
       </div>
       <hr>
       <div>
         <h2>ps2_keyboard::activate</h2>
         <b>Signature:</b> <code>void ps2_keyboard::activate() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Activates the ps2 keyboard driver<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -51,7 +51,7 @@
       <div>
         <h2>ps2_keyboard::is_presend</h2>
         <b>Signature:</b> <code>bool ps2_keyboard::is_presend() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Checks if the ps2 keyboard is presend<br/>
         <br/>
         <b>Return:</b> <code>bool</code>
       </div>
@@ -59,7 +59,7 @@
       <div>
         <h2>ps2_keyboard::get_name</h2>
         <b>Signature:</b> <code>char* ps2_keyboard::get_name() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the name of the ps2 keyboard driver<br/>
         <br/>
         <b>Return:</b> <code>char*</code>
       </div>
@@ -67,7 +67,7 @@
       <div>
         <h2>ps2_keyboard::getchar</h2>
         <b>Signature:</b> <code>char ps2_keyboard::getchar() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets a character from the ps2 keyboard<br/>
         <br/>
         <b>Return:</b> <code>char</code>
       </div>
@@ -75,7 +75,7 @@
       <div>
         <h2>ps2_keyboard::special_key_down</h2>
         <b>Signature:</b> <code>void ps2_keyboard::special_key_down(input::special_key key) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> handler for special key down events<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -88,7 +88,7 @@
       <div>
         <h2>ps2_keyboard::special_key_up</h2>
         <b>Signature:</b> <code>void ps2_keyboard::special_key_up(input::special_key key) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> handler for special key up events<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -101,7 +101,7 @@
       <div>
         <h2>ps2_keyboard::handle</h2>
         <b>Signature:</b> <code>void ps2_keyboard::handle() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> interrupt handler for the ps2 keyboard<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -109,7 +109,7 @@
       <div>
         <h2>ps2_keyboard::write</h2>
         <b>Signature:</b> <code>void ps2_keyboard::write(fs::vfs::file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes to the ps2 keyboard dev fs file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -125,7 +125,7 @@
       <div>
         <h2>ps2_keyboard::read</h2>
         <b>Signature:</b> <code>void ps2_keyboard::read(fs::vfs::file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads from the ps2 keyboard dev fs file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
