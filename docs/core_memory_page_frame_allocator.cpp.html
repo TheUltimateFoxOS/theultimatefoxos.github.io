@@ -36,7 +36,7 @@
       <div>
         <h2>page_frame_allocator::read_EFI_memory_map</h2>
         <b>Signature:</b> <code>void page_frame_allocator::read_EFI_memory_map() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads the EFI memory map<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -44,7 +44,7 @@
       <div>
         <h2>page_frame_allocator::init_bitmap</h2>
         <b>Signature:</b> <code>void page_frame_allocator::init_bitmap(size_t bitmapsize, void* buffer_address)</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Initializes the bitmap<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -58,7 +58,7 @@
       <div>
         <h2>page_frame_allocator::request_page_internal</h2>
         <b>Signature:</b> <code>void* page_frame_allocator::request_page_internal(uint64_t start, uint64_t end) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Requests a page of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -72,7 +72,7 @@
       <div>
         <h2>page_frame_allocator::request_page</h2>
         <b>Signature:</b> <code>void* page_frame_allocator::request_page() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Requests a page of memory<br/>
         <br/>
         <b>Return:</b> <code>void*</code>
       </div>
@@ -80,7 +80,7 @@
       <div>
         <h2>page_frame_allocator::request_pages_internal</h2>
         <b>Signature:</b> <code>void* page_frame_allocator::request_pages_internal(uint64_t start, uint64_t end, int amount) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Requests pages of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -95,7 +95,7 @@
       <div>
         <h2>page_frame_allocator::request_pages</h2>
         <b>Signature:</b> <code>void* page_frame_allocator::request_pages(int amount) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Requests pages of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -108,7 +108,7 @@
       <div>
         <h2>page_frame_allocator::free_page</h2>
         <b>Signature:</b> <code>void page_frame_allocator::free_page(void* address) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Frees a page of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -121,7 +121,7 @@
       <div>
         <h2>page_frame_allocator::free_pages</h2>
         <b>Signature:</b> <code>void page_frame_allocator::free_pages(void* address, uint64_t page_count) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Frees pages of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -135,7 +135,7 @@
       <div>
         <h2>page_frame_allocator::lock_page</h2>
         <b>Signature:</b> <code>void page_frame_allocator::lock_page(void* address) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Locks a page of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -148,7 +148,7 @@
       <div>
         <h2>page_frame_allocator::lock_pages</h2>
         <b>Signature:</b> <code>void page_frame_allocator::lock_pages(void* address, uint64_t page_count) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Locks pages of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -162,7 +162,7 @@
       <div>
         <h2>page_frame_allocator::unreserve_page</h2>
         <b>Signature:</b> <code>void page_frame_allocator::unreserve_page(void* address) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Unreserves a page of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -175,7 +175,7 @@
       <div>
         <h2>page_frame_allocator::unreserve_pages</h2>
         <b>Signature:</b> <code>void page_frame_allocator::unreserve_pages(void* address, uint64_t page_count) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Unreserves pages of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -189,7 +189,7 @@
       <div>
         <h2>page_frame_allocator::reserve_page</h2>
         <b>Signature:</b> <code>void page_frame_allocator::reserve_page(void* address) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reserves a page of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -202,7 +202,7 @@
       <div>
         <h2>page_frame_allocator::reserve_pages</h2>
         <b>Signature:</b> <code>void page_frame_allocator::reserve_pages(void* address, uint64_t pageCount) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reserves pages of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -216,7 +216,7 @@
       <div>
         <h2>page_frame_allocator::get_free_RAM</h2>
         <b>Signature:</b> <code>uint64_t page_frame_allocator::get_free_RAM() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the amount of free RAM<br/>
         <br/>
         <b>Return:</b> <code>uint64_t</code>
       </div>
@@ -224,7 +224,7 @@
       <div>
         <h2>page_frame_allocator::get_used_RAM</h2>
         <b>Signature:</b> <code>uint64_t page_frame_allocator::get_used_RAM() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the amount of used RAM<br/>
         <br/>
         <b>Return:</b> <code>uint64_t</code>
       </div>
@@ -232,7 +232,7 @@
       <div>
         <h2>page_frame_allocator::get_reserved_RAM</h2>
         <b>Signature:</b> <code>uint64_t page_frame_allocator::get_reserved_RAM() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the amount of reserved RAM<br/>
         <br/>
         <b>Return:</b> <code>uint64_t</code>
       </div>

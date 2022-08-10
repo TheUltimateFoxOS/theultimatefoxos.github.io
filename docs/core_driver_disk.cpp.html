@@ -37,20 +37,20 @@
         <h2>disk_device::disk_device</h2>
         <b>Signature:</b> <code>disk_device::disk_device() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the disk device class<br/>
       </div>
       <hr>
       <div>
         <h2>disk_device::~disk_device</h2>
         <b>Signature:</b> <code>disk_device::~disk_device() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the disk device class<br/>
       </div>
       <hr>
       <div>
         <h2>disk_device::read</h2>
         <b>Signature:</b> <code>void disk_device::read(uint64_t sector, uint32_t sector_count, void* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads from the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -65,7 +65,7 @@
       <div>
         <h2>disk_device::write</h2>
         <b>Signature:</b> <code>void disk_device::write(uint64_t sector, uint32_t sector_count, void* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes to the disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -80,7 +80,7 @@
       <div>
         <h2>disk_device::get_disk_label</h2>
         <b>Signature:</b> <code>bool disk_device::get_disk_label(char* out, fs::vfs::vfs_mount* mount) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the disk label<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -95,13 +95,13 @@
         <h2>disk_driver_manager::disk_driver_manager</h2>
         <b>Signature:</b> <code>disk_driver_manager::disk_driver_manager() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the disk driver manager class<br/>
       </div>
       <hr>
       <div>
         <h2>disk_driver_manager::add_disk</h2>
         <b>Signature:</b> <code>int disk_driver_manager::add_disk(disk_device* disk) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Adds a disk to the disk driver manager<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -114,7 +114,7 @@
       <div>
         <h2>disk_driver_manager::read</h2>
         <b>Signature:</b> <code>void disk_driver_manager::read(int disk_num, uint64_t sector, uint32_t sector_count, void* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reads from a disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -130,7 +130,7 @@
       <div>
         <h2>disk_driver_manager::write</h2>
         <b>Signature:</b> <code>void disk_driver_manager::write(int disk_num, uint64_t sector, uint32_t sector_count, void* buffer) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes to a disk<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -147,7 +147,7 @@
         <h2>raw_disk_dev_fs::raw_disk_dev_fs</h2>
         <b>Signature:</b> <code>raw_disk_dev_fs::raw_disk_dev_fs(int disk_num) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the raw disk dev fs class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -158,7 +158,7 @@
       <div>
         <h2>raw_disk_dev_fs::get_name</h2>
         <b>Signature:</b> <code>char* raw_disk_dev_fs::get_name() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the name of a file<br/>
         <br/>
         <b>Return:</b> <code>char*</code>
       </div>
@@ -166,7 +166,7 @@
       <div>
         <h2>raw_disk_dev_fs::write</h2>
         <b>Signature:</b> <code>void raw_disk_dev_fs::write(fs::file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Writes to a file<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

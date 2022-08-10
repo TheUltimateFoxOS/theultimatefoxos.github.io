@@ -36,7 +36,7 @@
       <div>
         <h2>memory::initialize_heap</h2>
         <b>Signature:</b> <code>void memory::initialize_heap(void* heap_address, size_t page_count) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Initializes the heap<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -50,7 +50,7 @@
       <div>
         <h2>memory::free</h2>
         <b>Signature:</b> <code>void memory::free(void* address) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Frees a block of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -63,7 +63,7 @@
       <div>
         <h2>memory::malloc</h2>
         <b>Signature:</b> <code>void* memory::malloc(size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Allocates a block of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -76,7 +76,7 @@
       <div>
         <h2>memory::realloc</h2>
         <b>Signature:</b> <code>void* memory::realloc(void* ptr, size_t old_size, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Reallocates a block of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -91,7 +91,7 @@
       <div>
         <h2>heap_segment_header_t::split</h2>
         <b>Signature:</b> <code>heap_segment_header_t* heap_segment_header_t::split(size_t split_length) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Splits a heap segment header<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -104,7 +104,7 @@
       <div>
         <h2>memory::expand_heap</h2>
         <b>Signature:</b> <code>void memory::expand_heap(size_t length) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Expands the heap<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -117,7 +117,7 @@
       <div>
         <h2>heap_segment_header_t::combine_forward</h2>
         <b>Signature:</b> <code>void heap_segment_header_t::combine_forward() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Combines a heap segment header forward<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -125,7 +125,7 @@
       <div>
         <h2>heap_segment_header_t::combine_backward</h2>
         <b>Signature:</b> <code>void heap_segment_header_t::combine_backward() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Combines a heap segment header backward<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -134,7 +134,7 @@
         <h2>new</h2>
         <b>Signature:</b> <code>void* operator new(size_t size) </code><br/>
         <b>Attributes:</b> <code>void*</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Allocates a block of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -162,7 +162,7 @@
         <h2>delete</h2>
         <b>Signature:</b> <code>void operator delete(void* p, unsigned long) </code><br/>
         <b>Attributes:</b> <code>void</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Frees a block of memory<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

@@ -36,7 +36,7 @@
       <div>
         <h2>interrupts::get_interrupt_name</h2>
         <b>Signature:</b> <code>char* interrupts::get_interrupt_name(int interrupt_number) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the name of an interrupt<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -49,7 +49,7 @@
       <div>
         <h2>interrupts::set_idt_gate</h2>
         <b>Signature:</b> <code>void interrupts::set_idt_gate(void* handler, uint8_t entry_offset, uint8_t type_attr, uint8_t selector) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sets an idt gate<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -65,7 +65,7 @@
       <div>
         <h2>interrupts::prepare_interrupts</h2>
         <b>Signature:</b> <code>void interrupts::prepare_interrupts() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Prepares the interrupts<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -74,7 +74,7 @@
         <h2>intr_common_handler_c</h2>
         <b>Signature:</b> <code>extern "C" void intr_common_handler_c(s_registers* regs) </code><br/>
         <b>Attributes:</b> <code>extern "C"</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Common handler for interrupts<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

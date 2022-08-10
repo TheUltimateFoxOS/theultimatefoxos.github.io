@@ -36,7 +36,7 @@
       <div>
         <h2>driver::load_network_stack</h2>
         <b>Signature:</b> <code>void driver::load_network_stack() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Loads the network stack<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -45,20 +45,20 @@
         <h2>nic_device::nic_device</h2>
         <b>Signature:</b> <code>nic_device::nic_device() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the nic device class<br/>
       </div>
       <hr>
       <div>
         <h2>nic_device::~nic_device</h2>
         <b>Signature:</b> <code>nic_device::~nic_device() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the nic device class<br/>
       </div>
       <hr>
       <div>
         <h2>nic_device::send</h2>
         <b>Signature:</b> <code>void nic_device::send(uint8_t* data, int32_t len) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends a packet<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -72,7 +72,7 @@
       <div>
         <h2>nic_device::register_nic_data_manager</h2>
         <b>Signature:</b> <code>void nic_device::register_nic_data_manager(nic_data_manager* _nic_data_manager) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Registers a nic data manager<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -85,7 +85,7 @@
       <div>
         <h2>nic_device::get_mac</h2>
         <b>Signature:</b> <code>uint64_t nic_device::get_mac() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the mac address of the nic<br/>
         <br/>
         <b>Return:</b> <code>uint64_t</code>
       </div>
@@ -93,7 +93,7 @@
       <div>
         <h2>nic_device::get_ip</h2>
         <b>Signature:</b> <code>uint32_t nic_device::get_ip() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the ip address of the nic<br/>
         <br/>
         <b>Return:</b> <code>uint32_t</code>
       </div>
@@ -101,7 +101,7 @@
       <div>
         <h2>nic_device::set_ip</h2>
         <b>Signature:</b> <code>void nic_device::set_ip(uint32_t ip) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sets the ip address of the nic<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -114,7 +114,7 @@
       <div>
         <h2>nic_device::load_network_stack</h2>
         <b>Signature:</b> <code>void nic_device::load_network_stack(net::network_stack_t* network_stack) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Loads the network stack<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -128,7 +128,7 @@
         <h2>nic_data_manager::nic_data_manager</h2>
         <b>Signature:</b> <code>nic_data_manager::nic_data_manager(int id) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the nic data manager class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -140,13 +140,13 @@
         <h2>nic_data_manager::~nic_data_manager</h2>
         <b>Signature:</b> <code>nic_data_manager::~nic_data_manager() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the nic data manager class<br/>
       </div>
       <hr>
       <div>
         <h2>nic_data_manager::send</h2>
         <b>Signature:</b> <code>void nic_data_manager::send(uint8_t* data, int32_t len) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends a packet<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -160,7 +160,7 @@
       <div>
         <h2>nic_data_manager::recv</h2>
         <b>Signature:</b> <code>bool nic_data_manager::recv(uint8_t* data, int32_t len) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Receives a packet<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -175,13 +175,13 @@
         <h2>nic_driver_manager::nic_driver_manager</h2>
         <b>Signature:</b> <code>nic_driver_manager::nic_driver_manager() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the nic driver manager class<br/>
       </div>
       <hr>
       <div>
         <h2>nic_driver_manager::add_nic</h2>
         <b>Signature:</b> <code>void nic_driver_manager::add_nic(nic_device* nic) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Adds a nic to the nic driver manager<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -194,7 +194,7 @@
       <div>
         <h2>nic_driver_manager::get_nic</h2>
         <b>Signature:</b> <code>nic_device* nic_driver_manager::get_nic(int nic_id) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets a nic from the nic driver manager<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
