@@ -25,7 +25,7 @@ jobs:
     - name: Clone horizon
       run: git clone https://github.com/TheUltimateFoxOS/horizon.git --branch "main"
     - name: Build horizon docs
-      run: cd horizon; deno run -A tools/doc/main.ts; cp -rv docs ../src/docs
+      run: cd horizon; deno run -A tools/doc/main.ts ${{ secrets.DEV_HOOK }}; cp -rv docs ../src/docs
     - name: Build files
       run: node build.js
     - name: Deploy
