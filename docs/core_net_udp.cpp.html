@@ -37,20 +37,20 @@
         <h2>udp_handler::udp_handler</h2>
         <b>Signature:</b> <code>udp_handler::udp_handler() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the udp handler class<br/>
       </div>
       <hr>
       <div>
         <h2>udp_handler::~udp_handler</h2>
         <b>Signature:</b> <code>udp_handler::~udp_handler() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the udp handler class<br/>
       </div>
       <hr>
       <div>
         <h2>udp_handler::on_udp_message</h2>
         <b>Signature:</b> <code>void udp_handler::on_udp_message(udp_socket *socket, uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles a UDP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -66,7 +66,7 @@
         <h2>udp_socket::udp_socket</h2>
         <b>Signature:</b> <code>udp_socket::udp_socket(udp_provider* provider) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the udp socket class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -78,13 +78,13 @@
         <h2>udp_socket::~udp_socket</h2>
         <b>Signature:</b> <code>udp_socket::~udp_socket() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the udp socket class<br/>
       </div>
       <hr>
       <div>
         <h2>udp_socket::handle_udp_message</h2>
         <b>Signature:</b> <code>void udp_socket::handle_udp_message(uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles a UDP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -98,7 +98,7 @@
       <div>
         <h2>udp_socket::send</h2>
         <b>Signature:</b> <code>void udp_socket::send(uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends a UDP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -112,7 +112,7 @@
       <div>
         <h2>udp_socket::disconnect</h2>
         <b>Signature:</b> <code>void udp_socket::disconnect() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Disconnects the socket<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -121,7 +121,7 @@
         <h2>udp_provider::udp_provider</h2>
         <b>Signature:</b> <code>udp_provider::udp_provider(ipv4_provider* ipv4Provider): ipv4_handler(ipv4Provider, 0x11), binds(100) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the udp provider class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -132,7 +132,7 @@
       <div>
         <h2>udp_provider::on_internet_protocol_received</h2>
         <b>Signature:</b> <code>bool udp_provider::on_internet_protocol_received(uint32_t srcIP_BE, uint32_t dstIP_BE, uint8_t* payload, uint32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles an IPv4 packet<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -148,7 +148,7 @@
       <div>
         <h2>udp_provider::connect</h2>
         <b>Signature:</b> <code>udp_socket* udp_provider::connect(uint32_t ip, uint16_t port) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Connects to a host<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -162,7 +162,7 @@
       <div>
         <h2>udp_provider::listen</h2>
         <b>Signature:</b> <code>udp_socket* udp_provider::listen(uint16_t port) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Listens for incoming connections<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -175,7 +175,7 @@
       <div>
         <h2>udp_provider::disconnect</h2>
         <b>Signature:</b> <code>void udp_provider::disconnect(udp_socket* socket) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Disconnects the socket<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -188,7 +188,7 @@
       <div>
         <h2>udp_provider::send</h2>
         <b>Signature:</b> <code>void udp_provider::send(udp_socket* socket, uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends a UDP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -203,7 +203,7 @@
       <div>
         <h2>udp_provider::bind</h2>
         <b>Signature:</b> <code>void udp_provider::bind(udp_socket* socket, udp_handler* handler) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Binds the socket to a port<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

@@ -37,7 +37,7 @@
         <h2>icmp_provider::icmp_provider</h2>
         <b>Signature:</b> <code>icmp_provider::icmp_provider(ipv4_provider* ipv4) : ipv4_handler(ipv4, 0x01) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the icmp provider class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -49,13 +49,13 @@
         <h2>icmp_provider::~icmp_provider</h2>
         <b>Signature:</b> <code>icmp_provider::~icmp_provider() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the icmp provider class<br/>
       </div>
       <hr>
       <div>
         <h2>icmp_provider::on_internet_protocol_received</h2>
         <b>Signature:</b> <code>bool icmp_provider::on_internet_protocol_received(uint32_t srcIP_BE, uint32_t dstIP_BE, uint8_t* payload, uint32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles an IPv4 packet<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -71,7 +71,7 @@
       <div>
         <h2>icmp_provider::send_echo_request</h2>
         <b>Signature:</b> <code>void icmp_provider::send_echo_request(uint32_t dstIP_BE) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends an ICMP echo request<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -84,7 +84,7 @@
       <div>
         <h2>icmp_provider::send_echo_reqest_and_wait</h2>
         <b>Signature:</b> <code>bool icmp_provider::send_echo_reqest_and_wait(uint32_t dstIP_BE) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends an ICMP echo request and waits for an echo reply<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

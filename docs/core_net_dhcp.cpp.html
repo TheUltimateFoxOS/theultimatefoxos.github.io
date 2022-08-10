@@ -37,7 +37,7 @@
         <h2>dhcp_protocol::dhcp_protocol</h2>
         <b>Signature:</b> <code>dhcp_protocol::dhcp_protocol(udp_socket* socket) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the dhcp protocol class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -49,13 +49,13 @@
         <h2>dhcp_protocol::~dhcp_protocol</h2>
         <b>Signature:</b> <code>dhcp_protocol::~dhcp_protocol() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the dhcp protocol class<br/>
       </div>
       <hr>
       <div>
         <h2>dhcp_protocol::request</h2>
         <b>Signature:</b> <code>void dhcp_protocol::request() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Requests a DHCP lease<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -63,7 +63,7 @@
       <div>
         <h2>dhcp_protocol::request</h2>
         <b>Signature:</b> <code>void dhcp_protocol::request(uint32_t ip) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Requests a DHCP lease<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -76,7 +76,7 @@
       <div>
         <h2>dhcp_protocol::on_udp_message</h2>
         <b>Signature:</b> <code>void dhcp_protocol::on_udp_message(udp_socket *socket, uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles a UDP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -91,7 +91,7 @@
       <div>
         <h2>dhcp_protocol::get_dhcp_options</h2>
         <b>Signature:</b> <code>void* dhcp_protocol::get_dhcp_options(dhcp_packet_t* packet, uint8_t type) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the DHCP options<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -105,7 +105,7 @@
       <div>
         <h2>dhcp_protocol::make_dhcp_packet</h2>
         <b>Signature:</b> <code>void dhcp_protocol::make_dhcp_packet(dhcp_packet_t* packet, uint8_t msg_type, uint32_t request_ip) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Makes a DHCP packet<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

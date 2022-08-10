@@ -37,20 +37,20 @@
         <h2>tcp_handler::tcp_handler</h2>
         <b>Signature:</b> <code>tcp_handler::tcp_handler() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the tcp handler class<br/>
       </div>
       <hr>
       <div>
         <h2>tcp_handler::~tcp_handler</h2>
         <b>Signature:</b> <code>tcp_handler::~tcp_handler() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the tcp handler class<br/>
       </div>
       <hr>
       <div>
         <h2>tcp_handler::on_tcp_message</h2>
         <b>Signature:</b> <code>bool tcp_handler::on_tcp_message(tcp_socket* socket, uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles a TCP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -66,7 +66,7 @@
         <h2>tcp_socket::tcp_socket</h2>
         <b>Signature:</b> <code>tcp_socket::tcp_socket(tcp_provider* provider): acknowledged(1) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the tcp socket class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -78,13 +78,13 @@
         <h2>tcp_socket::~tcp_socket</h2>
         <b>Signature:</b> <code>tcp_socket::~tcp_socket() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the tcp socket class<br/>
       </div>
       <hr>
       <div>
         <h2>tcp_socket::handle_tcp_message</h2>
         <b>Signature:</b> <code>bool tcp_socket::handle_tcp_message(uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles a TCP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -98,7 +98,7 @@
       <div>
         <h2>tcp_socket::send</h2>
         <b>Signature:</b> <code>void tcp_socket::send(uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends a TCP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -112,7 +112,7 @@
       <div>
         <h2>tcp_socket::disconnect</h2>
         <b>Signature:</b> <code>void tcp_socket::disconnect() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Disconnects the socket<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -121,7 +121,7 @@
         <h2>tcp_provider::tcp_provider</h2>
         <b>Signature:</b> <code>tcp_provider::tcp_provider(ipv4_provider *ipv4_provider): ipv4_handler(ipv4_provider, 0x06), binds(100) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the tcp provider class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -132,7 +132,7 @@
       <div>
         <h2>tcp_provider::on_internet_protocol_received</h2>
         <b>Signature:</b> <code>bool tcp_provider::on_internet_protocol_received(uint32_t srcIP_BE, uint32_t dstIP_BE, uint8_t* payload, uint32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles an IPv4 packet<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -148,7 +148,7 @@
       <div>
         <h2>tcp_provider::connect</h2>
         <b>Signature:</b> <code>tcp_socket* tcp_provider::connect(uint32_t ip, uint16_t port) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Connects to a host<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -162,7 +162,7 @@
       <div>
         <h2>tcp_provider::listen</h2>
         <b>Signature:</b> <code>tcp_socket* tcp_provider::listen(uint16_t port) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Listens for incoming connections<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -175,7 +175,7 @@
       <div>
         <h2>tcp_provider::disconnect</h2>
         <b>Signature:</b> <code>void tcp_provider::disconnect(tcp_socket* socket) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Disconnects the socket<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -188,7 +188,7 @@
       <div>
         <h2>tcp_provider::send</h2>
         <b>Signature:</b> <code>void tcp_provider::send(tcp_socket* socket, uint8_t* data, size_t size, uint16_t flags) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends a TCP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -204,7 +204,7 @@
       <div>
         <h2>tcp_provider::retransmit</h2>
         <b>Signature:</b> <code>void tcp_provider::retransmit(tcp_socket* socket, uint8_t* packet, size_t size, list<net::tcp_sent_packet_t>::node* list_node) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Retransmits a TCP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -220,7 +220,7 @@
       <div>
         <h2>tcp_provider::bind</h2>
         <b>Signature:</b> <code>void tcp_provider::bind(tcp_socket* socket, tcp_handler* handler) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Binds the socket to a port<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

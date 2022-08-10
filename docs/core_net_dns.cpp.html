@@ -37,7 +37,7 @@
         <h2>domain_name_service_provider::domain_name_service_provider</h2>
         <b>Signature:</b> <code>domain_name_service_provider::domain_name_service_provider(udp_socket* socket) : results(100) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the domain name service provider class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -49,13 +49,13 @@
         <h2>domain_name_service_provider::~domain_name_service_provider</h2>
         <b>Signature:</b> <code>domain_name_service_provider::~domain_name_service_provider() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the domain name service provider class<br/>
       </div>
       <hr>
       <div>
         <h2>domain_name_service_provider::resolv_domain_to_hostname</h2>
         <b>Signature:</b> <code>void domain_name_service_provider::resolv_domain_to_hostname(char* dst_hostname, char* src_domain) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Resolves a domain name to a hostname<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -69,7 +69,7 @@
       <div>
         <h2>domain_name_service_provider::resolv_hostname_to_domain</h2>
         <b>Signature:</b> <code>char* domain_name_service_provider::resolv_hostname_to_domain(uint8_t* reader, uint8_t* buffer, int *count) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Resolves a hostname to a domain name<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -84,7 +84,7 @@
       <div>
         <h2>domain_name_service_provider::resolv_skip_name</h2>
         <b>Signature:</b> <code>void domain_name_service_provider::resolv_skip_name(uint8_t* reader, uint8_t* buffer, int *count) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Skips a name<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -99,7 +99,7 @@
       <div>
         <h2>domain_name_service_provider::dns_request</h2>
         <b>Signature:</b> <code>void domain_name_service_provider::dns_request(char* name) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends a DNS request<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -112,7 +112,7 @@
       <div>
         <h2>domain_name_service_provider::resolve_A</h2>
         <b>Signature:</b> <code>uint32_t domain_name_service_provider::resolve_A(char* domain) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Resolves an A record<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -125,7 +125,7 @@
       <div>
         <h2>domain_name_service_provider::on_udp_message</h2>
         <b>Signature:</b> <code>void domain_name_service_provider::on_udp_message(udp_socket *socket, uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles a UDP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

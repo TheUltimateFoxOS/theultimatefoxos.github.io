@@ -37,7 +37,7 @@
         <h2>ether_frame_handler::ether_frame_handler</h2>
         <b>Signature:</b> <code>ether_frame_handler::ether_frame_handler(ether_frame_provider* backend, uint16_t ether_type) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the ether frame handler class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -50,13 +50,13 @@
         <h2>ether_frame_handler::~ether_frame_handler</h2>
         <b>Signature:</b> <code>ether_frame_handler::~ether_frame_handler() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the ether frame handler class<br/>
       </div>
       <hr>
       <div>
         <h2>ether_frame_handler::on_ether_frame_received</h2>
         <b>Signature:</b> <code>bool ether_frame_handler::on_ether_frame_received(uint8_t* payload, uint32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles an Ethernet frame<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -70,7 +70,7 @@
       <div>
         <h2>ether_frame_handler::send</h2>
         <b>Signature:</b> <code>void ether_frame_handler::send(uint64_t dest_mac_be, uint8_t* payload, uint32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends an Ethernet frame<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -86,7 +86,7 @@
         <h2>ether_frame_provider::ether_frame_provider</h2>
         <b>Signature:</b> <code>ether_frame_provider::ether_frame_provider(int nic_id) : driver::nic_data_manager(nic_id), handlers(100) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the ether frame provider class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -98,13 +98,13 @@
         <h2>ether_frame_provider::~ether_frame_provider</h2>
         <b>Signature:</b> <code>ether_frame_provider::~ether_frame_provider() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the ether frame provider class<br/>
       </div>
       <hr>
       <div>
         <h2>ether_frame_provider::recv</h2>
         <b>Signature:</b> <code>bool ether_frame_provider::recv(uint8_t* data, int32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Receives an Ethernet frame<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -118,7 +118,7 @@
       <div>
         <h2>ether_frame_provider::send_f</h2>
         <b>Signature:</b> <code>void ether_frame_provider::send_f(uint64_t dest_mac_be, uint16_t ether_type_be, uint8_t* payload, uint32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends an Ethernet frame<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

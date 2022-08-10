@@ -37,7 +37,7 @@
         <h2>socket_manager_socket::socket_manager_socket</h2>
         <b>Signature:</b> <code>socket_manager_socket::socket_manager_socket(int socket_type) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the socket manager socket class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -49,13 +49,13 @@
         <h2>socket_manager_socket::~socket_manager_socket</h2>
         <b>Signature:</b> <code>socket_manager_socket::~socket_manager_socket() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the socket manager socket class<br/>
       </div>
       <hr>
       <div>
         <h2>socket_manager_socket::connect</h2>
         <b>Signature:</b> <code>void socket_manager_socket::connect(uint32_t ip_be, uint16_t port) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Connects to a host<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -69,7 +69,7 @@
       <div>
         <h2>socket_manager_socket::disconnect</h2>
         <b>Signature:</b> <code>void socket_manager_socket::disconnect() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Disconnects the socket<br/>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
@@ -77,7 +77,7 @@
       <div>
         <h2>socket_manager_socket::send</h2>
         <b>Signature:</b> <code>void socket_manager_socket::send(uint8_t* data, uint32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Sends a TCP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -91,7 +91,7 @@
       <div>
         <h2>socket_manager_socket::receive</h2>
         <b>Signature:</b> <code>int socket_manager_socket::receive(uint8_t* data, uint32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Receives a TCP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -105,7 +105,7 @@
       <div>
         <h2>socket_manager_socket::on_tcp_message</h2>
         <b>Signature:</b> <code>bool socket_manager_socket::on_tcp_message(tcp_socket* socket, uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles a TCP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -120,7 +120,7 @@
       <div>
         <h2>socket_manager_socket::on_udp_message</h2>
         <b>Signature:</b> <code>void socket_manager_socket::on_udp_message(udp_socket* socket, uint8_t* data, size_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles a UDP message<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -136,13 +136,13 @@
         <h2>socket_manager::socket_manager</h2>
         <b>Signature:</b> <code>socket_manager::socket_manager() : sockets(10) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the socket manager class<br/>
       </div>
       <hr>
       <div>
         <h2>socket_manager::alloc_socket</h2>
         <b>Signature:</b> <code>int socket_manager::alloc_socket() </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Allocates a socket<br/>
         <br/>
         <b>Return:</b> <code>int</code>
       </div>
@@ -150,7 +150,7 @@
       <div>
         <h2>socket_manager::free_socket</h2>
         <b>Signature:</b> <code>void socket_manager::free_socket(int socket_id) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Frees a socket<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -163,7 +163,7 @@
       <div>
         <h2>socket_manager::register_socket</h2>
         <b>Signature:</b> <code>void socket_manager::register_socket(socket_manager_socket* sock) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Registers a socket<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -176,7 +176,7 @@
       <div>
         <h2>socket_manager::get_socket</h2>
         <b>Signature:</b> <code>socket_manager_socket* socket_manager::get_socket(int socket_id) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets a socket<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>

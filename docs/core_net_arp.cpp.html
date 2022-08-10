@@ -37,7 +37,7 @@
         <h2>address_resolution_protocol::address_resolution_protocol</h2>
         <b>Signature:</b> <code>address_resolution_protocol::address_resolution_protocol(ether_frame_provider* ether): ether_frame_handler(ether, 0x806) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Constructor for the address resolution protocol class<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -49,13 +49,13 @@
         <h2>address_resolution_protocol::~address_resolution_protocol</h2>
         <b>Signature:</b> <code>address_resolution_protocol::~address_resolution_protocol() </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Destructor for the address resolution protocol class<br/>
       </div>
       <hr>
       <div>
         <h2>address_resolution_protocol::on_ether_frame_received</h2>
         <b>Signature:</b> <code>bool address_resolution_protocol::on_ether_frame_received(uint8_t* payload, uint32_t size) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Handles an Ethernet frame<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -69,7 +69,7 @@
       <div>
         <h2>address_resolution_protocol::broadcast_mac</h2>
         <b>Signature:</b> <code>void address_resolution_protocol::broadcast_mac(uint32_t ip_be) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Broadcasts an ARP packet<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -82,7 +82,7 @@
       <div>
         <h2>address_resolution_protocol::request_mac_address</h2>
         <b>Signature:</b> <code>void address_resolution_protocol::request_mac_address(uint32_t ip_be) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Requests the MAC address of a host<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -95,7 +95,7 @@
       <div>
         <h2>address_resolution_protocol::get_mac_from_cache</h2>
         <b>Signature:</b> <code>uint64_t address_resolution_protocol::get_mac_from_cache(uint32_t ip_be) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Gets the MAC address of a host from the cache<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
@@ -108,7 +108,7 @@
       <div>
         <h2>address_resolution_protocol::resolve</h2>
         <b>Signature:</b> <code>uint64_t address_resolution_protocol::resolve(uint32_t ip_be) </code><br/>
-        <b>Description:</b> No description<br/>
+        <b>Description:</b> Resolves an IP address to a MAC address<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
