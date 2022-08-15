@@ -523,6 +523,10 @@
 							"file_name": "sys_sound_push_note.cpp"
 						},
 						{
+							"html_name": "core_syscall_sys_dbg.cpp.html",
+							"file_name": "sys_dbg.cpp"
+						},
+						{
 							"html_name": "core_syscall_syscall_handler.asm.html",
 							"file_name": "syscall_handler.asm"
 						},
