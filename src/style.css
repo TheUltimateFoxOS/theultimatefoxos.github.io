@@ -1,11 +1,13 @@
-pre {background: #e7e7e7; border: 1px solid #ddd; border-left: 3px solid #f36d33; color: #666; page-break-inside: avoid; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word}
-code {background-color: #e7e7e7; padding-left: 4px; padding-right: 4px; font-family: monospace}
+pre {background: #636363; border: 1px solid #e7e7e7; border-left: 3px solid #f36d33; color: #666; page-break-inside: avoid; font-family: monospace; font-size: 15px; line-height: 1.6; margin-bottom: 1.6em; max-width: 100%; overflow: auto; padding: 1em 1.5em; display: block; word-wrap: break-word}
+code {background-color: #636363; padding-left: 4px; padding-right: 4px; font-family: monospace}
 
 html, body {
   font-family: 'Noto Sans JP',sans-serif;
   font-size: 15px;
   line-height: 1.5;
   margin: 0;
+  background-color: #353535;
+  color: #e7e7e7;
 }
 
 h1 {font-size: 36px}
@@ -21,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a {color: inherit}
-hr {border: 0px; border-top: 1px solid #eeeeee; margin: 20px 0;}
+hr {border: 0px; border-top: 1px solid #e7e7e7; margin: 20px 0;}
 
 .hidden {
   display: none;
@@ -124,7 +126,7 @@ hr {border: 0px; border-top: 1px solid #eeeeee; margin: 20px 0;}
 }
 .fox-ul li {
   padding: 0px !important;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #e7e7e7;
 }
 .fox-ul li:last-child {
   padding: 0px !important;
