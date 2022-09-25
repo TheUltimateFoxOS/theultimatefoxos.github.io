@@ -173,12 +173,20 @@
 					"folder_name": "scheduler",
 					"files": [
 						{
+							"html_name": "core_scheduler_smp.cpp.html",
+							"file_name": "smp.cpp"
+						},
+						{
 							"html_name": "core_scheduler_scheduler.cpp.html",
 							"file_name": "scheduler.cpp"
 						},
 						{
 							"html_name": "core_scheduler_scheduler_entry.asm.html",
 							"file_name": "scheduler_entry.asm"
+						},
+						{
+							"html_name": "core_scheduler_bootstrap.asm.html",
+							"file_name": "bootstrap.asm"
 						}
 					]
 				},

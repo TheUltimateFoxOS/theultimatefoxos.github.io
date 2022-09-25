@@ -205,10 +205,16 @@
 		<loc>https://theultimatefoxos.dev/src/docs/core_sanitizers_ubsan.cpp.html</loc>
 	</url>
 	<url>
+		<loc>https://theultimatefoxos.dev/src/docs/core_scheduler_bootstrap.asm.html</loc>
+	</url>
+	<url>
 		<loc>https://theultimatefoxos.dev/src/docs/core_scheduler_scheduler.cpp.html</loc>
 	</url>
 	<url>
 		<loc>https://theultimatefoxos.dev/src/docs/core_scheduler_scheduler_entry.asm.html</loc>
+	</url>
+	<url>
+		<loc>https://theultimatefoxos.dev/src/docs/core_scheduler_smp.cpp.html</loc>
 	</url>
 	<url>
 		<loc>https://theultimatefoxos.dev/src/docs/core_sound_sound.cpp.html</loc>
