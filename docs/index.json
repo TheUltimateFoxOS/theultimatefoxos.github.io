@@ -3,44 +3,6 @@
 		{
 			"next": [
 				{
-					"folder_name": "ext2",
-					"files": [
-						{
-							"html_name": "filesystems_ext2_ext2_fs.cpp.html",
-							"file_name": "ext2_fs.cpp"
-						},
-						{
-							"html_name": "filesystems_ext2_main.cpp.html",
-							"file_name": "main.cpp"
-						},
-						{
-							"html_name": "filesystems_ext2_ext2_utils.cpp.html",
-							"file_name": "ext2_utils.cpp"
-						},
-						{
-							"html_name": "filesystems_ext2_ext2_vfs.cpp.html",
-							"file_name": "ext2_vfs.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "fat32",
-					"files": [
-						{
-							"html_name": "filesystems_fat32_fat32_utils.cpp.html",
-							"file_name": "fat32_utils.cpp"
-						},
-						{
-							"html_name": "filesystems_fat32_main.cpp.html",
-							"file_name": "main.cpp"
-						},
-						{
-							"html_name": "filesystems_fat32_fat32_vfs.cpp.html",
-							"file_name": "fat32_vfs.cpp"
-						}
-					]
-				},
-				{
 					"folder_name": "foxfs",
 					"files": [
 						{
@@ -56,6 +18,44 @@
 							"file_name": "foxfs_fs.cpp"
 						}
 					]
+				},
+				{
+					"folder_name": "ext2",
+					"files": [
+						{
+							"html_name": "filesystems_ext2_ext2_utils.cpp.html",
+							"file_name": "ext2_utils.cpp"
+						},
+						{
+							"html_name": "filesystems_ext2_main.cpp.html",
+							"file_name": "main.cpp"
+						},
+						{
+							"html_name": "filesystems_ext2_ext2_vfs.cpp.html",
+							"file_name": "ext2_vfs.cpp"
+						},
+						{
+							"html_name": "filesystems_ext2_ext2_fs.cpp.html",
+							"file_name": "ext2_fs.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "fat32",
+					"files": [
+						{
+							"html_name": "filesystems_fat32_fat32_vfs.cpp.html",
+							"file_name": "fat32_vfs.cpp"
+						},
+						{
+							"html_name": "filesystems_fat32_main.cpp.html",
+							"file_name": "main.cpp"
+						},
+						{
+							"html_name": "filesystems_fat32_fat32_utils.cpp.html",
+							"file_name": "fat32_utils.cpp"
+						}
+					]
 				}
 			],
 			"folder_name": "filesystems",
@@ -64,713 +64,15 @@
 		{
 			"next": [
 				{
-					"folder_name": "driver",
-					"files": [
-						{
-							"html_name": "core_driver_clock.cpp.html",
-							"file_name": "clock.cpp"
-						},
-						{
-							"html_name": "core_driver_nic.cpp.html",
-							"file_name": "nic.cpp"
-						},
-						{
-							"html_name": "core_driver_driver.cpp.html",
-							"file_name": "driver.cpp"
-						},
-						{
-							"html_name": "core_driver_disk.cpp.html",
-							"file_name": "disk.cpp"
-						},
-						{
-							"html_name": "core_driver_virtual_disk.cpp.html",
-							"file_name": "virtual_disk.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "timer",
-					"files": [
-						{
-							"html_name": "core_timer_pit.cpp.html",
-							"file_name": "pit.cpp"
-						},
-						{
-							"html_name": "core_timer_hpet.cpp.html",
-							"file_name": "hpet.cpp"
-						},
-						{
-							"html_name": "core_timer_timer.cpp.html",
-							"file_name": "timer.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "apic",
-					"files": [
-						{
-							"html_name": "core_apic_apic_io.cpp.html",
-							"file_name": "apic_io.cpp"
-						},
-						{
-							"html_name": "core_apic_trampoline.cpp.html",
-							"file_name": "trampoline.cpp"
-						},
-						{
-							"html_name": "core_apic_trampoline.asm.html",
-							"file_name": "trampoline.asm"
-						},
-						{
-							"html_name": "core_apic_apic.cpp.html",
-							"file_name": "apic.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "output",
-					"files": [
-						{
-							"html_name": "core_output_serial_port.cpp.html",
-							"file_name": "serial_port.cpp"
-						},
-						{
-							"html_name": "core_output_output.cpp.html",
-							"file_name": "output.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "scheduler",
-					"files": [
-						{
-							"html_name": "core_scheduler_scheduler_entry.asm.html",
-							"file_name": "scheduler_entry.asm"
-						},
-						{
-							"html_name": "core_scheduler_smp.cpp.html",
-							"file_name": "smp.cpp"
-						},
-						{
-							"html_name": "core_scheduler_bootstrap.asm.html",
-							"file_name": "bootstrap.asm"
-						},
-						{
-							"html_name": "core_scheduler_scheduler.cpp.html",
-							"file_name": "scheduler.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "net",
-					"files": [
-						{
-							"html_name": "core_net_icmp.cpp.html",
-							"file_name": "icmp.cpp"
-						},
-						{
-							"html_name": "core_net_etherframe.cpp.html",
-							"file_name": "etherframe.cpp"
-						},
-						{
-							"html_name": "core_net_ntp.cpp.html",
-							"file_name": "ntp.cpp"
-						},
-						{
-							"html_name": "core_net_dns.cpp.html",
-							"file_name": "dns.cpp"
-						},
-						{
-							"html_name": "core_net_udp.cpp.html",
-							"file_name": "udp.cpp"
-						},
-						{
-							"html_name": "core_net_arp.cpp.html",
-							"file_name": "arp.cpp"
-						},
-						{
-							"html_name": "core_net_tcp.cpp.html",
-							"file_name": "tcp.cpp"
-						},
-						{
-							"html_name": "core_net_socket_manager.cpp.html",
-							"file_name": "socket_manager.cpp"
-						},
-						{
-							"html_name": "core_net_ipv4.cpp.html",
-							"file_name": "ipv4.cpp"
-						},
-						{
-							"html_name": "core_net_dhcp.cpp.html",
-							"file_name": "dhcp.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "sound",
-					"files": [
-						{
-							"html_name": "core_sound_sound.cpp.html",
-							"file_name": "sound.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "boot",
-					"files": [
-						{
-							"html_name": "core_boot_boot.cpp.html",
-							"file_name": "boot.cpp"
-						},
-						{
-							"html_name": "core_boot_limine_entry.asm.html",
-							"file_name": "limine_entry.asm"
-						},
-						{
-							"html_name": "core_boot_limine.cpp.html",
-							"file_name": "limine.cpp"
-						},
-						{
-							"html_name": "core_boot_stivale2_entry.asm.html",
-							"file_name": "stivale2_entry.asm"
-						},
-						{
-							"html_name": "core_boot_stivale2.cpp.html",
-							"file_name": "stivale2.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "fs",
-					"files": [
-						{
-							"html_name": "core_fs_vfs.cpp.html",
-							"file_name": "vfs.cpp"
-						},
-						{
-							"html_name": "core_fs_saf.cpp.html",
-							"file_name": "saf.cpp"
-						},
-						{
-							"html_name": "core_fs_modules_mount.cpp.html",
-							"file_name": "modules_mount.cpp"
-						},
-						{
-							"html_name": "core_fs_fd.cpp.html",
-							"file_name": "fd.cpp"
-						},
-						{
-							"html_name": "core_fs_gpt.cpp.html",
-							"file_name": "gpt.cpp"
-						},
-						{
-							"html_name": "core_fs_dev_fs.cpp.html",
-							"file_name": "dev_fs.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "interrupts",
-					"files": [
-						{
-							"html_name": "core_interrupts_interrupts.asm.html",
-							"file_name": "interrupts.asm"
-						},
-						{
-							"html_name": "core_interrupts_idt.cpp.html",
-							"file_name": "idt.cpp"
-						},
-						{
-							"html_name": "core_interrupts_interrupt_handler.cpp.html",
-							"file_name": "interrupt_handler.cpp"
-						},
-						{
-							"html_name": "core_interrupts_interrupts.cpp.html",
-							"file_name": "interrupts.cpp"
-						},
-						{
-							"html_name": "core_interrupts_interrupts_stub.asm.html",
-							"file_name": "interrupts_stub.asm"
-						}
-					]
-				},
-				{
-					"folder_name": "resources",
-					"files": [
-						{
-							"html_name": "core_resources_binfile.asm.html",
-							"file_name": "binfile.asm"
-						}
-					]
-				},
-				{
-					"folder_name": "acpi",
-					"files": [
-						{
-							"html_name": "core_acpi_madt.cpp.html",
-							"file_name": "madt.cpp"
-						},
-						{
-							"html_name": "core_acpi_acpi.cpp.html",
-							"file_name": "acpi.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "memory",
-					"files": [
-						{
-							"html_name": "core_memory_pagetable.cpp.html",
-							"file_name": "pagetable.cpp"
-						},
-						{
-							"html_name": "core_memory_memory.cpp.html",
-							"file_name": "memory.cpp"
-						},
-						{
-							"html_name": "core_memory_page_map_indexer.cpp.html",
-							"file_name": "page_map_indexer.cpp"
-						},
-						{
-							"html_name": "core_memory_page_frame_allocator.cpp.html",
-							"file_name": "page_frame_allocator.cpp"
-						},
-						{
-							"html_name": "core_memory_bitmap.cpp.html",
-							"file_name": "bitmap.cpp"
-						},
-						{
-							"html_name": "core_memory_page_table_manager.cpp.html",
-							"file_name": "page_table_manager.cpp"
-						},
-						{
-							"html_name": "core_memory_heap.cpp.html",
-							"file_name": "heap.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "utils",
-					"files": [
-						{
-							"html_name": "core_utils_vsprintf.cpp.html",
-							"file_name": "vsprintf.cpp"
-						},
-						{
-							"html_name": "core_utils_mmio.cpp.html",
-							"file_name": "mmio.cpp"
-						},
-						{
-							"html_name": "core_utils_ipc.cpp.html",
-							"file_name": "ipc.cpp"
-						},
-						{
-							"html_name": "core_utils_cstr.cpp.html",
-							"file_name": "cstr.cpp"
-						},
-						{
-							"html_name": "core_utils_unix_time.cpp.html",
-							"file_name": "unix_time.cpp"
-						},
-						{
-							"html_name": "core_utils_assert.cpp.html",
-							"file_name": "assert.cpp"
-						},
-						{
-							"html_name": "core_utils_lock.asm.html",
-							"file_name": "lock.asm"
-						},
-						{
-							"html_name": "core_utils_fxsr.asm.html",
-							"file_name": "fxsr.asm"
-						},
-						{
-							"html_name": "core_utils_string.cpp.html",
-							"file_name": "string.cpp"
-						},
-						{
-							"html_name": "core_utils_abort.cpp.html",
-							"file_name": "abort.cpp"
-						},
-						{
-							"html_name": "core_utils_port.cpp.html",
-							"file_name": "port.cpp"
-						},
-						{
-							"html_name": "core_utils_argparse.cpp.html",
-							"file_name": "argparse.cpp"
-						},
-						{
-							"html_name": "core_utils_log.cpp.html",
-							"file_name": "log.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "pci",
-					"files": [
-						{
-							"html_name": "core_pci_pci_io.cpp.html",
-							"file_name": "pci_io.cpp"
-						},
-						{
-							"html_name": "core_pci_pci_descriptors.cpp.html",
-							"file_name": "pci_descriptors.cpp"
-						},
-						{
-							"html_name": "core_pci_pci_bar.cpp.html",
-							"file_name": "pci_bar.cpp"
-						},
-						{
-							"html_name": "core_pci_pci.cpp.html",
-							"file_name": "pci.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "sanitizers",
-					"files": [
-						{
-							"html_name": "core_sanitizers_ubsan.cpp.html",
-							"file_name": "ubsan.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "elf",
-					"files": [
-						{
-							"html_name": "core_elf_elf_loader.cpp.html",
-							"file_name": "elf_loader.cpp"
-						},
-						{
-							"html_name": "core_elf_function_patch.cpp.html",
-							"file_name": "function_patch.cpp"
-						},
-						{
-							"html_name": "core_elf_elf_resolver.cpp.html",
-							"file_name": "elf_resolver.cpp"
-						},
-						{
-							"html_name": "core_elf_unwind.cpp.html",
-							"file_name": "unwind.cpp"
-						},
-						{
-							"html_name": "core_elf_kernel_module.cpp.html",
-							"file_name": "kernel_module.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "input",
-					"files": [
-						{
-							"html_name": "core_input_mouse_input.cpp.html",
-							"file_name": "mouse_input.cpp"
-						},
-						{
-							"html_name": "core_input_keyboard_input.cpp.html",
-							"file_name": "keyboard_input.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "syscall",
-					"files": [
-						{
-							"html_name": "core_syscall_syscall.cpp.html",
-							"file_name": "syscall.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_time.cpp.html",
-							"file_name": "sys_time.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_socket_connect.cpp.html",
-							"file_name": "sys_socket_connect.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_dir_at.cpp.html",
-							"file_name": "sys_dir_at.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_sound_sync.cpp.html",
-							"file_name": "sys_sound_sync.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_icmp_echo_request.cpp.html",
-							"file_name": "sys_icmp_echo_request.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_write.cpp.html",
-							"file_name": "sys_write.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_mouse_get_pos.cpp.html",
-							"file_name": "sys_mouse_get_pos.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_close.cpp.html",
-							"file_name": "sys_close.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_mouse_reset.cpp.html",
-							"file_name": "sys_mouse_reset.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_memory.cpp.html",
-							"file_name": "sys_memory.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_memory_info.cpp.html",
-							"file_name": "sys_memory_info.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_dns_resolve.cpp.html",
-							"file_name": "sys_dns_resolve.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_fs_at.cpp.html",
-							"file_name": "sys_fs_at.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_touch.cpp.html",
-							"file_name": "sys_touch.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_get_file_size.cpp.html",
-							"file_name": "sys_get_file_size.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_socket_recv.cpp.html",
-							"file_name": "sys_socket_recv.cpp"
-						},
-						{
-							"html_name": "core_syscall_syscall_handler.asm.html",
-							"file_name": "syscall_handler.asm"
-						},
-						{
-							"html_name": "core_syscall_sys_exit.cpp.html",
-							"file_name": "sys_exit.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_dbg.cpp.html",
-							"file_name": "sys_dbg.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_spawn.cpp.html",
-							"file_name": "sys_spawn.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_ipc_register.cpp.html",
-							"file_name": "sys_ipc_register.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_socket_send.cpp.html",
-							"file_name": "sys_socket_send.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_mkdir.cpp.html",
-							"file_name": "sys_mkdir.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_delay.cpp.html",
-							"file_name": "sys_delay.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_socket_disconnect.cpp.html",
-							"file_name": "sys_socket_disconnect.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_delete.cpp.html",
-							"file_name": "sys_delete.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_ipc_send_message.cpp.html",
-							"file_name": "sys_ipc_send_message.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_ipc_get_hid.cpp.html",
-							"file_name": "sys_ipc_get_hid.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_ipc_unregister.cpp.html",
-							"file_name": "sys_ipc_unregister.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_sound_push_note.cpp.html",
-							"file_name": "sys_sound_push_note.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_mouse_get_buttons.cpp.html",
-							"file_name": "sys_mouse_get_buttons.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_thread.cpp.html",
-							"file_name": "sys_thread.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_insmod.cpp.html",
-							"file_name": "sys_insmod.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_open.cpp.html",
-							"file_name": "sys_open.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_sound_get_channel_count.cpp.html",
-							"file_name": "sys_sound_get_channel_count.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_env.cpp.html",
-							"file_name": "sys_env.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_delete_dir.cpp.html",
-							"file_name": "sys_delete_dir.cpp"
-						},
-						{
-							"html_name": "core_syscall_sys_read.cpp.html",
-							"file_name": "sys_read.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "renderer",
-					"files": [
-						{
-							"html_name": "core_renderer_boot_screen_renderer.cpp.html",
-							"file_name": "boot_screen_renderer.cpp"
-						},
-						{
-							"html_name": "core_renderer_renderer.cpp.html",
-							"file_name": "renderer.cpp"
-						},
-						{
-							"html_name": "core_renderer_font_renderer.cpp.html",
-							"file_name": "font_renderer.cpp"
-						},
-						{
-							"html_name": "core_renderer_render2d.cpp.html",
-							"file_name": "render2d.cpp"
-						}
-					]
-				}
-			],
-			"folder_name": "core",
-			"files": [
-				{
-					"html_name": "core_gdt.asm.html",
-					"file_name": "gdt.asm"
-				},
-				{
-					"html_name": "core_main.cpp.html",
-					"file_name": "main.cpp"
-				},
-				{
-					"html_name": "core_gdt.cpp.html",
-					"file_name": "gdt.cpp"
-				}
-			]
-		},
-		{
-			"next": [
-				{
-					"folder_name": "graphics",
-					"files": [
-						{
-							"html_name": "features_graphics_sys_fb_info.cpp.html",
-							"file_name": "sys_fb_info.cpp"
-						},
-						{
-							"html_name": "features_graphics_sys_copy_to_fb.cpp.html",
-							"file_name": "sys_copy_to_fb.cpp"
-						},
-						{
-							"html_name": "features_graphics_main.cpp.html",
-							"file_name": "main.cpp"
-						},
-						{
-							"html_name": "features_graphics_sys_copy_from_fb.cpp.html",
-							"file_name": "sys_copy_from_fb.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "laihost",
-					"files": [
-						{
-							"html_name": "features_laihost_laihost.cpp.html",
-							"file_name": "laihost.cpp"
-						},
-						{
-							"html_name": "features_laihost_main.cpp.html",
-							"file_name": "main.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "acpi_dump",
-					"files": [
-						{
-							"html_name": "features_acpi_dump_acpi_vfs.cpp.html",
-							"file_name": "acpi_vfs.cpp"
-						},
-						{
-							"html_name": "features_acpi_dump_main.cpp.html",
-							"file_name": "main.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "smbios32",
-					"files": [
-						{
-							"html_name": "features_smbios32_sys_sm32_get_cpu_info.cpp.html",
-							"file_name": "sys_sm32_get_cpu_info.cpp"
-						},
-						{
-							"html_name": "features_smbios32_main.cpp.html",
-							"file_name": "main.cpp"
-						},
-						{
-							"html_name": "features_smbios32_smbios32.cpp.html",
-							"file_name": "smbios32.cpp"
-						},
-						{
-							"html_name": "features_smbios32_sm32_dev_fs_file.cpp.html",
-							"file_name": "sm32_dev_fs_file.cpp"
-						}
-					]
-				}
-			],
-			"folder_name": "features",
-			"files": []
-		},
-		{
-			"next": [
-				{
 					"folder_name": "ps2_mouse",
 					"files": [
 						{
-							"html_name": "devices_ps2_mouse_ps2_mouse.cpp.html",
-							"file_name": "ps2_mouse.cpp"
-						},
-						{
 							"html_name": "devices_ps2_mouse_main.cpp.html",
 							"file_name": "main.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "rtl8139",
-					"files": [
-						{
-							"html_name": "devices_rtl8139_rtl8139.cpp.html",
-							"file_name": "rtl8139.cpp"
 						},
 						{
-							"html_name": "devices_rtl8139_main.cpp.html",
-							"file_name": "main.cpp"
+							"html_name": "devices_ps2_mouse_ps2_mouse.cpp.html",
+							"file_name": "ps2_mouse.cpp"
 						}
 					]
 				},
@@ -788,27 +90,27 @@
 					]
 				},
 				{
-					"folder_name": "am79C973",
+					"folder_name": "ps2_keyboard",
 					"files": [
 						{
-							"html_name": "devices_am79C973_main.cpp.html",
+							"html_name": "devices_ps2_keyboard_main.cpp.html",
 							"file_name": "main.cpp"
 						},
 						{
-							"html_name": "devices_am79C973_am79C973.cpp.html",
-							"file_name": "am79C973.cpp"
+							"html_name": "devices_ps2_keyboard_ps2_keyboard.cpp.html",
+							"file_name": "ps2_keyboard.cpp"
 						}
 					]
 				},
 				{
-					"folder_name": "ps2_keyboard",
+					"folder_name": "xhci",
 					"files": [
 						{
-							"html_name": "devices_ps2_keyboard_ps2_keyboard.cpp.html",
-							"file_name": "ps2_keyboard.cpp"
+							"html_name": "devices_xhci_xhci.cpp.html",
+							"file_name": "xhci.cpp"
 						},
 						{
-							"html_name": "devices_ps2_keyboard_main.cpp.html",
+							"html_name": "devices_xhci_main.cpp.html",
 							"file_name": "main.cpp"
 						}
 					]
@@ -840,15 +142,41 @@
 					]
 				},
 				{
-					"folder_name": "xhci",
+					"folder_name": "ata",
 					"files": [
 						{
-							"html_name": "devices_xhci_xhci.cpp.html",
-							"file_name": "xhci.cpp"
+							"html_name": "devices_ata_ata.cpp.html",
+							"file_name": "ata.cpp"
 						},
 						{
-							"html_name": "devices_xhci_main.cpp.html",
+							"html_name": "devices_ata_main.cpp.html",
 							"file_name": "main.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "rtl8139",
+					"files": [
+						{
+							"html_name": "devices_rtl8139_rtl8139.cpp.html",
+							"file_name": "rtl8139.cpp"
+						},
+						{
+							"html_name": "devices_rtl8139_main.cpp.html",
+							"file_name": "main.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "am79C973",
+					"files": [
+						{
+							"html_name": "devices_am79C973_main.cpp.html",
+							"file_name": "main.cpp"
+						},
+						{
+							"html_name": "devices_am79C973_am79C973.cpp.html",
+							"file_name": "am79C973.cpp"
 						}
 					]
 				},
@@ -856,34 +184,710 @@
 					"folder_name": "ahci",
 					"files": [
 						{
-							"html_name": "devices_ahci_ahci.cpp.html",
-							"file_name": "ahci.cpp"
+							"html_name": "devices_ahci_ahci_port.cpp.html",
+							"file_name": "ahci_port.cpp"
 						},
 						{
 							"html_name": "devices_ahci_main.cpp.html",
 							"file_name": "main.cpp"
 						},
 						{
-							"html_name": "devices_ahci_ahci_port.cpp.html",
-							"file_name": "ahci_port.cpp"
-						}
-					]
-				},
-				{
-					"folder_name": "ata",
-					"files": [
-						{
-							"html_name": "devices_ata_main.cpp.html",
-							"file_name": "main.cpp"
-						},
-						{
-							"html_name": "devices_ata_ata.cpp.html",
-							"file_name": "ata.cpp"
+							"html_name": "devices_ahci_ahci.cpp.html",
+							"file_name": "ahci.cpp"
 						}
 					]
 				}
 			],
 			"folder_name": "devices",
+			"files": []
+		},
+		{
+			"next": [
+				{
+					"folder_name": "utils",
+					"files": [
+						{
+							"html_name": "core_utils_cstr.cpp.html",
+							"file_name": "cstr.cpp"
+						},
+						{
+							"html_name": "core_utils_lock.asm.html",
+							"file_name": "lock.asm"
+						},
+						{
+							"html_name": "core_utils_unix_time.cpp.html",
+							"file_name": "unix_time.cpp"
+						},
+						{
+							"html_name": "core_utils_fxsr.asm.html",
+							"file_name": "fxsr.asm"
+						},
+						{
+							"html_name": "core_utils_argparse.cpp.html",
+							"file_name": "argparse.cpp"
+						},
+						{
+							"html_name": "core_utils_vsprintf.cpp.html",
+							"file_name": "vsprintf.cpp"
+						},
+						{
+							"html_name": "core_utils_mmio.cpp.html",
+							"file_name": "mmio.cpp"
+						},
+						{
+							"html_name": "core_utils_ipc.cpp.html",
+							"file_name": "ipc.cpp"
+						},
+						{
+							"html_name": "core_utils_string.cpp.html",
+							"file_name": "string.cpp"
+						},
+						{
+							"html_name": "core_utils_abort.cpp.html",
+							"file_name": "abort.cpp"
+						},
+						{
+							"html_name": "core_utils_log.cpp.html",
+							"file_name": "log.cpp"
+						},
+						{
+							"html_name": "core_utils_assert.cpp.html",
+							"file_name": "assert.cpp"
+						},
+						{
+							"html_name": "core_utils_port.cpp.html",
+							"file_name": "port.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "pci",
+					"files": [
+						{
+							"html_name": "core_pci_pci_descriptors.cpp.html",
+							"file_name": "pci_descriptors.cpp"
+						},
+						{
+							"html_name": "core_pci_pci_bar.cpp.html",
+							"file_name": "pci_bar.cpp"
+						},
+						{
+							"html_name": "core_pci_pci.cpp.html",
+							"file_name": "pci.cpp"
+						},
+						{
+							"html_name": "core_pci_pci_io.cpp.html",
+							"file_name": "pci_io.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "renderer",
+					"files": [
+						{
+							"html_name": "core_renderer_render2d.cpp.html",
+							"file_name": "render2d.cpp"
+						},
+						{
+							"html_name": "core_renderer_renderer.cpp.html",
+							"file_name": "renderer.cpp"
+						},
+						{
+							"html_name": "core_renderer_font_renderer.cpp.html",
+							"file_name": "font_renderer.cpp"
+						},
+						{
+							"html_name": "core_renderer_boot_screen_renderer.cpp.html",
+							"file_name": "boot_screen_renderer.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "fs",
+					"files": [
+						{
+							"html_name": "core_fs_vfs.cpp.html",
+							"file_name": "vfs.cpp"
+						},
+						{
+							"html_name": "core_fs_dev_fs.cpp.html",
+							"file_name": "dev_fs.cpp"
+						},
+						{
+							"html_name": "core_fs_modules_mount.cpp.html",
+							"file_name": "modules_mount.cpp"
+						},
+						{
+							"html_name": "core_fs_saf.cpp.html",
+							"file_name": "saf.cpp"
+						},
+						{
+							"html_name": "core_fs_fd.cpp.html",
+							"file_name": "fd.cpp"
+						},
+						{
+							"html_name": "core_fs_gpt.cpp.html",
+							"file_name": "gpt.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "timer",
+					"files": [
+						{
+							"html_name": "core_timer_pit.cpp.html",
+							"file_name": "pit.cpp"
+						},
+						{
+							"html_name": "core_timer_hpet.cpp.html",
+							"file_name": "hpet.cpp"
+						},
+						{
+							"html_name": "core_timer_timer.cpp.html",
+							"file_name": "timer.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "sanitizers",
+					"files": [
+						{
+							"html_name": "core_sanitizers_ubsan.cpp.html",
+							"file_name": "ubsan.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "output",
+					"files": [
+						{
+							"html_name": "core_output_output.cpp.html",
+							"file_name": "output.cpp"
+						},
+						{
+							"html_name": "core_output_serial_port.cpp.html",
+							"file_name": "serial_port.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "boot",
+					"files": [
+						{
+							"html_name": "core_boot_stivale2.cpp.html",
+							"file_name": "stivale2.cpp"
+						},
+						{
+							"html_name": "core_boot_boot.cpp.html",
+							"file_name": "boot.cpp"
+						},
+						{
+							"html_name": "core_boot_stivale2_entry.asm.html",
+							"file_name": "stivale2_entry.asm"
+						},
+						{
+							"html_name": "core_boot_limine_entry.asm.html",
+							"file_name": "limine_entry.asm"
+						},
+						{
+							"html_name": "core_boot_limine.cpp.html",
+							"file_name": "limine.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "input",
+					"files": [
+						{
+							"html_name": "core_input_mouse_input.cpp.html",
+							"file_name": "mouse_input.cpp"
+						},
+						{
+							"html_name": "core_input_keyboard_input.cpp.html",
+							"file_name": "keyboard_input.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "driver",
+					"files": [
+						{
+							"html_name": "core_driver_disk.cpp.html",
+							"file_name": "disk.cpp"
+						},
+						{
+							"html_name": "core_driver_driver.cpp.html",
+							"file_name": "driver.cpp"
+						},
+						{
+							"html_name": "core_driver_clock.cpp.html",
+							"file_name": "clock.cpp"
+						},
+						{
+							"html_name": "core_driver_virtual_disk.cpp.html",
+							"file_name": "virtual_disk.cpp"
+						},
+						{
+							"html_name": "core_driver_nic.cpp.html",
+							"file_name": "nic.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "memory",
+					"files": [
+						{
+							"html_name": "core_memory_memory.cpp.html",
+							"file_name": "memory.cpp"
+						},
+						{
+							"html_name": "core_memory_heap.cpp.html",
+							"file_name": "heap.cpp"
+						},
+						{
+							"html_name": "core_memory_pagetable.cpp.html",
+							"file_name": "pagetable.cpp"
+						},
+						{
+							"html_name": "core_memory_bitmap.cpp.html",
+							"file_name": "bitmap.cpp"
+						},
+						{
+							"html_name": "core_memory_page_frame_allocator.cpp.html",
+							"file_name": "page_frame_allocator.cpp"
+						},
+						{
+							"html_name": "core_memory_page_table_manager.cpp.html",
+							"file_name": "page_table_manager.cpp"
+						},
+						{
+							"html_name": "core_memory_page_map_indexer.cpp.html",
+							"file_name": "page_map_indexer.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "sound",
+					"files": [
+						{
+							"html_name": "core_sound_sound.cpp.html",
+							"file_name": "sound.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "scheduler",
+					"files": [
+						{
+							"html_name": "core_scheduler_scheduler.cpp.html",
+							"file_name": "scheduler.cpp"
+						},
+						{
+							"html_name": "core_scheduler_scheduler_entry.asm.html",
+							"file_name": "scheduler_entry.asm"
+						},
+						{
+							"html_name": "core_scheduler_bootstrap.asm.html",
+							"file_name": "bootstrap.asm"
+						},
+						{
+							"html_name": "core_scheduler_smp.cpp.html",
+							"file_name": "smp.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "elf",
+					"files": [
+						{
+							"html_name": "core_elf_elf_resolver.cpp.html",
+							"file_name": "elf_resolver.cpp"
+						},
+						{
+							"html_name": "core_elf_function_patch.cpp.html",
+							"file_name": "function_patch.cpp"
+						},
+						{
+							"html_name": "core_elf_elf_loader.cpp.html",
+							"file_name": "elf_loader.cpp"
+						},
+						{
+							"html_name": "core_elf_kernel_module.cpp.html",
+							"file_name": "kernel_module.cpp"
+						},
+						{
+							"html_name": "core_elf_unwind.cpp.html",
+							"file_name": "unwind.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "net",
+					"files": [
+						{
+							"html_name": "core_net_socket_manager.cpp.html",
+							"file_name": "socket_manager.cpp"
+						},
+						{
+							"html_name": "core_net_ipv4.cpp.html",
+							"file_name": "ipv4.cpp"
+						},
+						{
+							"html_name": "core_net_etherframe.cpp.html",
+							"file_name": "etherframe.cpp"
+						},
+						{
+							"html_name": "core_net_dns.cpp.html",
+							"file_name": "dns.cpp"
+						},
+						{
+							"html_name": "core_net_udp.cpp.html",
+							"file_name": "udp.cpp"
+						},
+						{
+							"html_name": "core_net_tcp.cpp.html",
+							"file_name": "tcp.cpp"
+						},
+						{
+							"html_name": "core_net_arp.cpp.html",
+							"file_name": "arp.cpp"
+						},
+						{
+							"html_name": "core_net_icmp.cpp.html",
+							"file_name": "icmp.cpp"
+						},
+						{
+							"html_name": "core_net_ntp.cpp.html",
+							"file_name": "ntp.cpp"
+						},
+						{
+							"html_name": "core_net_dhcp.cpp.html",
+							"file_name": "dhcp.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "syscall",
+					"files": [
+						{
+							"html_name": "core_syscall_sys_close.cpp.html",
+							"file_name": "sys_close.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_time.cpp.html",
+							"file_name": "sys_time.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_mouse_get_pos.cpp.html",
+							"file_name": "sys_mouse_get_pos.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_sound_sync.cpp.html",
+							"file_name": "sys_sound_sync.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_read.cpp.html",
+							"file_name": "sys_read.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_socket_disconnect.cpp.html",
+							"file_name": "sys_socket_disconnect.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_dns_resolve.cpp.html",
+							"file_name": "sys_dns_resolve.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_socket_send.cpp.html",
+							"file_name": "sys_socket_send.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_ipc_send_message.cpp.html",
+							"file_name": "sys_ipc_send_message.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_icmp_echo_request.cpp.html",
+							"file_name": "sys_icmp_echo_request.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_dbg.cpp.html",
+							"file_name": "sys_dbg.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_dir_at.cpp.html",
+							"file_name": "sys_dir_at.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_delete.cpp.html",
+							"file_name": "sys_delete.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_memory_info.cpp.html",
+							"file_name": "sys_memory_info.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_ipc_get_hid.cpp.html",
+							"file_name": "sys_ipc_get_hid.cpp"
+						},
+						{
+							"html_name": "core_syscall_syscall.cpp.html",
+							"file_name": "syscall.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_delay.cpp.html",
+							"file_name": "sys_delay.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_ipc_register.cpp.html",
+							"file_name": "sys_ipc_register.cpp"
+						},
+						{
+							"html_name": "core_syscall_syscall_handler.asm.html",
+							"file_name": "syscall_handler.asm"
+						},
+						{
+							"html_name": "core_syscall_sys_write.cpp.html",
+							"file_name": "sys_write.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_sound_get_channel_count.cpp.html",
+							"file_name": "sys_sound_get_channel_count.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_clock.cpp.html",
+							"file_name": "sys_clock.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_socket_connect.cpp.html",
+							"file_name": "sys_socket_connect.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_thread.cpp.html",
+							"file_name": "sys_thread.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_sound_push_note.cpp.html",
+							"file_name": "sys_sound_push_note.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_open.cpp.html",
+							"file_name": "sys_open.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_mouse_get_buttons.cpp.html",
+							"file_name": "sys_mouse_get_buttons.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_exit.cpp.html",
+							"file_name": "sys_exit.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_mouse_reset.cpp.html",
+							"file_name": "sys_mouse_reset.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_fs_at.cpp.html",
+							"file_name": "sys_fs_at.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_delete_dir.cpp.html",
+							"file_name": "sys_delete_dir.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_insmod.cpp.html",
+							"file_name": "sys_insmod.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_ipc_unregister.cpp.html",
+							"file_name": "sys_ipc_unregister.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_touch.cpp.html",
+							"file_name": "sys_touch.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_memory.cpp.html",
+							"file_name": "sys_memory.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_socket_recv.cpp.html",
+							"file_name": "sys_socket_recv.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_get_file_size.cpp.html",
+							"file_name": "sys_get_file_size.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_mkdir.cpp.html",
+							"file_name": "sys_mkdir.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_spawn.cpp.html",
+							"file_name": "sys_spawn.cpp"
+						},
+						{
+							"html_name": "core_syscall_sys_env.cpp.html",
+							"file_name": "sys_env.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "acpi",
+					"files": [
+						{
+							"html_name": "core_acpi_madt.cpp.html",
+							"file_name": "madt.cpp"
+						},
+						{
+							"html_name": "core_acpi_acpi.cpp.html",
+							"file_name": "acpi.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "resources",
+					"files": [
+						{
+							"html_name": "core_resources_binfile.asm.html",
+							"file_name": "binfile.asm"
+						}
+					]
+				},
+				{
+					"folder_name": "interrupts",
+					"files": [
+						{
+							"html_name": "core_interrupts_interrupts_stub.asm.html",
+							"file_name": "interrupts_stub.asm"
+						},
+						{
+							"html_name": "core_interrupts_interrupts.cpp.html",
+							"file_name": "interrupts.cpp"
+						},
+						{
+							"html_name": "core_interrupts_interrupts.asm.html",
+							"file_name": "interrupts.asm"
+						},
+						{
+							"html_name": "core_interrupts_idt.cpp.html",
+							"file_name": "idt.cpp"
+						},
+						{
+							"html_name": "core_interrupts_interrupt_handler.cpp.html",
+							"file_name": "interrupt_handler.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "apic",
+					"files": [
+						{
+							"html_name": "core_apic_trampoline.cpp.html",
+							"file_name": "trampoline.cpp"
+						},
+						{
+							"html_name": "core_apic_apic_io.cpp.html",
+							"file_name": "apic_io.cpp"
+						},
+						{
+							"html_name": "core_apic_apic.cpp.html",
+							"file_name": "apic.cpp"
+						},
+						{
+							"html_name": "core_apic_trampoline.asm.html",
+							"file_name": "trampoline.asm"
+						}
+					]
+				}
+			],
+			"folder_name": "core",
+			"files": [
+				{
+					"html_name": "core_main.cpp.html",
+					"file_name": "main.cpp"
+				},
+				{
+					"html_name": "core_gdt.cpp.html",
+					"file_name": "gdt.cpp"
+				},
+				{
+					"html_name": "core_gdt.asm.html",
+					"file_name": "gdt.asm"
+				}
+			]
+		},
+		{
+			"next": [
+				{
+					"folder_name": "graphics",
+					"files": [
+						{
+							"html_name": "features_graphics_sys_fb_info.cpp.html",
+							"file_name": "sys_fb_info.cpp"
+						},
+						{
+							"html_name": "features_graphics_main.cpp.html",
+							"file_name": "main.cpp"
+						},
+						{
+							"html_name": "features_graphics_sys_copy_from_fb.cpp.html",
+							"file_name": "sys_copy_from_fb.cpp"
+						},
+						{
+							"html_name": "features_graphics_sys_copy_to_fb.cpp.html",
+							"file_name": "sys_copy_to_fb.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "laihost",
+					"files": [
+						{
+							"html_name": "features_laihost_main.cpp.html",
+							"file_name": "main.cpp"
+						},
+						{
+							"html_name": "features_laihost_laihost.cpp.html",
+							"file_name": "laihost.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "smbios32",
+					"files": [
+						{
+							"html_name": "features_smbios32_smbios32.cpp.html",
+							"file_name": "smbios32.cpp"
+						},
+						{
+							"html_name": "features_smbios32_main.cpp.html",
+							"file_name": "main.cpp"
+						},
+						{
+							"html_name": "features_smbios32_sys_sm32_get_cpu_info.cpp.html",
+							"file_name": "sys_sm32_get_cpu_info.cpp"
+						},
+						{
+							"html_name": "features_smbios32_sm32_dev_fs_file.cpp.html",
+							"file_name": "sm32_dev_fs_file.cpp"
+						}
+					]
+				},
+				{
+					"folder_name": "acpi_dump",
+					"files": [
+						{
+							"html_name": "features_acpi_dump_acpi_vfs.cpp.html",
+							"file_name": "acpi_vfs.cpp"
+						},
+						{
+							"html_name": "features_acpi_dump_main.cpp.html",
+							"file_name": "main.cpp"
+						}
+					]
+				}
+			],
+			"folder_name": "features",
 			"files": []
 		}
 	],

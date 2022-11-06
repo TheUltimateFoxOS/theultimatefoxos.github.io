@@ -12,7 +12,7 @@
 
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <script src="/scripts/main.js" defer></script>
-    <title>FoxOS - timer.cpp</title>
+    <title>FoxOS - sys_clock.cpp</title>
   </head>
   <body>
     <div class="fox-bar" id="fox-bar">
@@ -34,43 +34,32 @@
     
     <div class="fox-text">
       <div>
-        <h2>timer_device::sleep</h2>
-        <b>Signature:</b> <code>void timer_device::sleep(uint32_t ms) </code><br/>
-        <b>Description:</b> Sleeps for a certain amount of time<br/>
+        <h2>syscall::sys_clock</h2>
+        <b>Signature:</b> <code>void syscall::sys_clock(interrupts::s_registers* regs) </code><br/>
+        <b>Description:</b> No description<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
-          <li><code>uint32_t ms</code></li>
+          <li><code>interrupts::s_registers* regs</code></li>
         </ul>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
       <hr>
       <div>
-        <h2>timer_device::get_ticks_per_second</h2>
-        <b>Signature:</b> <code>uint64_t timer_device::get_ticks_per_second() </code><br/>
+        <h2>syscall::sys_clock_ticks_per_second</h2>
+        <b>Signature:</b> <code>void syscall::sys_clock_ticks_per_second(interrupts::s_registers* regs) </code><br/>
         <b>Description:</b> No description<br/>
         <br/>
-        <b>Return:</b> <code>uint64_t</code>
-      </div>
-      <hr>
-      <div>
-        <h2>timer_device::get_ticks</h2>
-        <b>Signature:</b> <code>uint64_t timer_device::get_ticks() </code><br/>
-        <b>Description:</b> No description<br/>
-        <br/>
-        <b>Return:</b> <code>uint64_t</code>
-      </div>
-      <hr>
-      <div>
-        <h2>timer::setup</h2>
-        <b>Signature:</b> <code>void timer::setup() </code><br/>
-        <b>Description:</b> Sets up the timers in the system<br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>interrupts::s_registers* regs</code></li>
+        </ul>
         <br/>
         <b>Return:</b> <code>void</code>
       </div>
       <hr>
-<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/timer/timer.cpp">Show file on GitHub</a><br/>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/syscall/sys_clock.cpp">Show file on GitHub</a><br/>
     </div>
   </body>
 </html>
