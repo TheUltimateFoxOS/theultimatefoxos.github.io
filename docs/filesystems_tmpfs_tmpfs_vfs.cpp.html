@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#f37735">
+
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/fonts/notosansjp.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <script src="/scripts/main.js" defer></script>
+    <title>FoxOS - tmpfs_vfs.cpp</title>
+  </head>
+  <body>
+    <div class="fox-bar" id="fox-bar">
+    <a href="/">Home</a>
+    <a href="/about/">About us</a>
+    <a href="https://github.com/TheUltimateFoxOS">GitHub</a>
+    <a href="/contact/">Contact us</a>
+    <a href="/docs/">Docs</a>
+    <a href="javascript:void(0);" class="icon" onclick="nav_bar_expand()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <header class="fox-header" style="padding:50px 16px">
+    <h1 class="fox-header-title">FoxOS</h1>
+    <p class="fox-header-subtitle">Welcome to the FoxOS website!</p>
+  </header>
+
+    
+    <div class="fox-text">
+      <div>
+        <h2>tmpfs_mount::tmpfs_mount</h2>
+        <b>Signature:</b> <code>tmpfs_mount::tmpfs_mount(char* name) </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* name</code></li>
+        </ul>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::~tmpfs_mount</h2>
+        <b>Signature:</b> <code>tmpfs_mount::~tmpfs_mount() </code><br/>
+        <b>Attributes:</b> <code>undefined</code><br/>
+        <b>Description:</b> No description<br/>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::open</h2>
+        <b>Signature:</b> <code>file_t* tmpfs_mount::open(char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>file_t*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::close</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::close(file_t* file) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>file_t* file</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::read</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::read(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>file_t* file</code></li>
+          <li><code>void* buffer</code></li>
+          <li><code>size_t size</code></li>
+          <li><code>size_t offset</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::write</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::write(file_t* file, void* buffer, size_t size, size_t offset) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>file_t* file</code></li>
+          <li><code>void* buffer</code></li>
+          <li><code>size_t size</code></li>
+          <li><code>size_t offset</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::touch</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::touch(char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::mkdir</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::mkdir(char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::dir_at</h2>
+        <b>Signature:</b> <code>dir_t tmpfs_mount::dir_at(int idx, char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>int idx</code></li>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>dir_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::delete_</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::delete_(file_t* file) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>file_t* file</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::delete_dir</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::delete_dir(char* path) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::name</h2>
+        <b>Signature:</b> <code>char* tmpfs_mount::name() </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Return:</b> <code>char*</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::read_dirent</h2>
+        <b>Signature:</b> <code>bool tmpfs_mount::read_dirent(tmpfs_dirent_t* dirent, void* buffer, size_t size, size_t offset) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tmpfs_dirent_t* dirent</code></li>
+          <li><code>void* buffer</code></li>
+          <li><code>size_t size</code></li>
+          <li><code>size_t offset</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>bool</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::write_dirent</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::write_dirent(tmpfs_dirent_t* dirent, void* buffer, size_t size, size_t offset) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tmpfs_dirent_t* dirent</code></li>
+          <li><code>void* buffer</code></li>
+          <li><code>size_t size</code></li>
+          <li><code>size_t offset</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::readdir</h2>
+        <b>Signature:</b> <code>bool tmpfs_mount::readdir(tmpfs_dirent_t* dir, int idx, tmpfs_dirent_t* buffer) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tmpfs_dirent_t* dir</code></li>
+          <li><code>int idx</code></li>
+          <li><code>tmpfs_dirent_t* buffer</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>bool</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::writedir</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::writedir(tmpfs_dirent_t* parent, tmpfs_dirent_t* dirent) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tmpfs_dirent_t* parent</code></li>
+          <li><code>tmpfs_dirent_t* dirent</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::create_diretnt</h2>
+        <b>Signature:</b> <code>void tmpfs_mount::create_diretnt(tmpfs_dirent_t* parent, char* name, int type) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>tmpfs_dirent_t* parent</code></li>
+          <li><code>char* name</code></li>
+          <li><code>int type</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>void</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::get_dirent</h2>
+        <b>Signature:</b> <code>bool tmpfs_mount::get_dirent(char* path, tmpfs_dirent_t* buffer) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+          <li><code>tmpfs_dirent_t* buffer</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>bool</code>
+      </div>
+      <hr>
+      <div>
+        <h2>tmpfs_mount::get_parent_dirent</h2>
+        <b>Signature:</b> <code>bool tmpfs_mount::get_parent_dirent(char* path, tmpfs_dirent_t* buffer) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>char* path</code></li>
+          <li><code>tmpfs_dirent_t* buffer</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>bool</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/filesystems/tmpfs/tmpfs_vfs.cpp">Show file on GitHub</a><br/>
+    </div>
+  </body>
+</html>

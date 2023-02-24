@@ -12,7 +12,7 @@
 
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <script src="/scripts/main.js" defer></script>
-    <title>FoxOS - sys_spawn.cpp</title>
+    <title>FoxOS - fexec_loader.cpp</title>
   </head>
   <body>
     <div class="fox-bar" id="fox-bar">
@@ -34,32 +34,36 @@
     
     <div class="fox-text">
       <div>
-        <h2>syscall::sys_spawn</h2>
-        <b>Signature:</b> <code>void syscall::sys_spawn(interrupts::s_registers* regs) </code><br/>
-        <b>Description:</b> Syscall to spawn a new process<br/>
-        <br/>
-        <b>Parameters:</b><br/>
-        <ul>
-          <li><code>interrupts::s_registers* regs</code></li>
-        </ul>
-        <br/>
-        <b>Return:</b> <code>void</code>
-      </div>
-      <hr>
-      <div>
-        <h2></h2>
-        <b>Signature:</b> <code>    switch (type) </code><br/>
+        <h2>fexec::load_fexec</h2>
+        <b>Signature:</b> <code>scheduler::task_t* fexec::load_fexec(char* filename, const char** argv, const char** envp) </code><br/>
         <b>Description:</b> No description<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
-          <li><code>type</code></li>
+          <li><code>char* filename</code></li>
+          <li><code>const char** argv</code></li>
+          <li><code>const char** envp</code></li>
         </ul>
         <br/>
-        <b>Return:</b> <code>switch</code>
+        <b>Return:</b> <code>scheduler::task_t*</code>
       </div>
       <hr>
-<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/syscall/sys_spawn.cpp">Show file on GitHub</a><br/>
+      <div>
+        <h2>fexec::load_fexec</h2>
+        <b>Signature:</b> <code>scheduler::task_t* fexec::load_fexec(void* ptr, const char** argv, const char** envp) </code><br/>
+        <b>Description:</b> No description<br/>
+        <br/>
+        <b>Parameters:</b><br/>
+        <ul>
+          <li><code>void* ptr</code></li>
+          <li><code>const char** argv</code></li>
+          <li><code>const char** envp</code></li>
+        </ul>
+        <br/>
+        <b>Return:</b> <code>scheduler::task_t*</code>
+      </div>
+      <hr>
+<a href="https://github.com/TheUltimateFoxOS/horizon/tree/main/core/fexec/fexec_loader.cpp">Show file on GitHub</a><br/>
     </div>
   </body>
 </html>

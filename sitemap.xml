@@ -70,6 +70,9 @@
 		<loc>https://theultimatefoxos.dev/src/docs/core_elf_unwind.cpp.html</loc>
 	</url>
 	<url>
+		<loc>https://theultimatefoxos.dev/src/docs/core_fexec_fexec_loader.cpp.html</loc>
+	</url>
+	<url>
 		<loc>https://theultimatefoxos.dev/src/docs/core_fs_dev_fs.cpp.html</loc>
 	</url>
 	<url>
@@ -508,13 +511,10 @@
 		<loc>https://theultimatefoxos.dev/src/docs/filesystems_fat32_main.cpp.html</loc>
 	</url>
 	<url>
-		<loc>https://theultimatefoxos.dev/src/docs/filesystems_foxfs_foxfs_fs.cpp.html</loc>
+		<loc>https://theultimatefoxos.dev/src/docs/filesystems_tmpfs_main.cpp.html</loc>
 	</url>
 	<url>
-		<loc>https://theultimatefoxos.dev/src/docs/filesystems_foxfs_foxfs_vfs.cpp.html</loc>
-	</url>
-	<url>
-		<loc>https://theultimatefoxos.dev/src/docs/filesystems_foxfs_main.cpp.html</loc>
+		<loc>https://theultimatefoxos.dev/src/docs/filesystems_tmpfs_tmpfs_vfs.cpp.html</loc>
 	</url>
 	<url>
 		<loc>https://theultimatefoxos.dev/src/docs/</loc>
