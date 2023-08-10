@@ -35,19 +35,19 @@
     <div class="fox-text">
       <div>
         <h2>pit_timer::pit_timer</h2>
-        <b>Signature:</b> <code>pit_timer::pit_timer() : channel_0(0x40), interrupt_handler(0x20) </code><br/>
+        <b>Signature:</b> <code>pit_timer::pit_timer() : init(0x43), channel_0(0x40), interrupt_handler(0x20) </code><br/>
         <b>Attributes:</b> <code>undefined</code><br/>
         <b>Description:</b> Constructor for the pit timer class<br/>
       </div>
       <hr>
       <div>
         <h2>pit_timer::set_divisor</h2>
-        <b>Signature:</b> <code>void pit_timer::set_divisor(uint16_t this_divisor) </code><br/>
+        <b>Signature:</b> <code>void pit_timer::set_divisor(uint16_t new_divisor) </code><br/>
         <b>Description:</b> Sets the divisor of the pit timer<br/>
         <br/>
         <b>Parameters:</b><br/>
         <ul>
-          <li><code>uint16_t this_divisor</code></li>
+          <li><code>uint16_t new_divisor</code></li>
         </ul>
         <br/>
         <b>Return:</b> <code>void</code>
@@ -86,6 +86,14 @@
         <h2>pit_timer::get_ticks</h2>
         <b>Signature:</b> <code>uint64_t pit_timer::get_ticks() </code><br/>
         <b>Description:</b> Gets the current number of ticks of the pit timer since initialized<br/>
+        <br/>
+        <b>Return:</b> <code>uint64_t</code>
+      </div>
+      <hr>
+      <div>
+        <h2>pit_timer::get_ticks_ms</h2>
+        <b>Signature:</b> <code>uint64_t pit_timer::get_ticks_ms() </code><br/>
+        <b>Description:</b> No description<br/>
         <br/>
         <b>Return:</b> <code>uint64_t</code>
       </div>
